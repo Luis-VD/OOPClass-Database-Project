@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Stockserialitems"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="STOCKSERIALITEMS"
+  AliasName="Stockserialitems"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Stockid"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="STOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKSERIALITEMS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Loccode"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="LOCCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKSERIALITEMS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Serialno"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="SERIALNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKSERIALITEMS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Quantity"
+    Precision="10"
+    Scale="2"
+    ColumnName="QUANTITY"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKSERIALITEMS"/>
+  <AccessorAttribute
+    Name="Stockmaster"
+    Association="project1.Cnt001367Assoc"
+    AssociationEnd="project1.Cnt001367Assoc.Stockmaster"
+    AssociationOtherEnd="project1.Cnt001367Assoc.Stockserialitems"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001368Assoc"
+    AssociationEnd="project1.Cnt001368Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001368Assoc.Stockserialitems"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="StockserialitemsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="STOCKSERIALITEMS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockserialitems.Stockid"/>
+      <Item Value="project1.Stockserialitems.Serialno"/>
+      <Item Value="project1.Stockserialitems.Loccode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001367">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001367"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockserialitems.Stockid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001368">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001368"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockserialitems.Loccode"/>
+    </AttrArray>
+  </Key>
+</Entity>

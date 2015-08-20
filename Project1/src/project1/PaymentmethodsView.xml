@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PaymentmethodsView"
+  Version="11.1.2.62.76"
+  SelectList="Paymentmethods.PAYMENTID, 
+       Paymentmethods.PAYMENTNAME, 
+       Paymentmethods.PAYMENTTYPE, 
+       Paymentmethods.RECEIPTTYPE"
+  FromList="PAYMENTMETHODS Paymentmethods"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Paymentmethods"
+    Entity="project1.Paymentmethods"/>
+  <ViewAttribute
+    Name="Paymentid"
+    PrecisionRule="true"
+    EntityAttrName="Paymentid"
+    EntityUsage="Paymentmethods"
+    AliasName="PAYMENTID"/>
+  <ViewAttribute
+    Name="Paymentname"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Paymentname"
+    EntityUsage="Paymentmethods"
+    AliasName="PAYMENTNAME"/>
+  <ViewAttribute
+    Name="Paymenttype"
+    PrecisionRule="true"
+    EntityAttrName="Paymenttype"
+    EntityUsage="Paymentmethods"
+    AliasName="PAYMENTTYPE"/>
+  <ViewAttribute
+    Name="Receipttype"
+    PrecisionRule="true"
+    EntityAttrName="Receipttype"
+    EntityUsage="Paymentmethods"
+    AliasName="RECEIPTTYPE"/>
+</ViewObject>

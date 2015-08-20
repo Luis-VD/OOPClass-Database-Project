@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Woissues"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="WOISSUES"
+  AliasName="Woissues"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Issueno"
+    Precision="8"
+    Scale="0"
+    ColumnName="ISSUENO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="WOISSUES"/>
+  <Attribute
+    Name="Woref"
+    Precision="255"
+    ColumnName="WOREF"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WOISSUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Stockid"
+    Precision="255"
+    ColumnName="STOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WOISSUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Issuetype"
+    Precision="255"
+    ColumnName="ISSUETYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WOISSUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Workcentre"
+    Precision="255"
+    ColumnName="WORKCENTRE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WOISSUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Qtyissued"
+    Precision="16"
+    Scale="4"
+    ColumnName="QTYISSUED"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="WOISSUES"/>
+  <Attribute
+    Name="Stdcost"
+    Precision="20"
+    Scale="4"
+    ColumnName="STDCOST"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="WOISSUES"/>
+  <Attribute
+    Name="Rowid"
+    IsUpdateable="false"
+    ColumnName="ROWID"
+    SQLType="ROWID"
+    Type="oracle.jbo.domain.RowID"
+    ColumnType="ROWID"
+    TableName="WOISSUES"
+    PrimaryKey="true"/>
+  <AccessorAttribute
+    Name="Stockmaster"
+    Association="project1.Cnt001393Assoc"
+    AssociationEnd="project1.Cnt001393Assoc.Stockmaster"
+    AssociationOtherEnd="project1.Cnt001393Assoc.Woissues"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Workcentres"
+    Association="project1.Cnt001394Assoc"
+    AssociationEnd="project1.Cnt001394Assoc.Workcentres"
+    AssociationOtherEnd="project1.Cnt001394Assoc.Woissues"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Worksorders"
+    Association="project1.Cnt001392Assoc"
+    AssociationEnd="project1.Cnt001392Assoc.Worksorders"
+    AssociationOtherEnd="project1.Cnt001392Assoc.Woissues"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="Cnt001392">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="WORKSORDERS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001392"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Woissues.Woref"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001393">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001393"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Woissues.Stockid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001394">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="WORKCENTRES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001394"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Woissues.Workcentre"/>
+    </AttrArray>
+  </Key>
+</Entity>

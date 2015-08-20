@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SecurityrolesView"
+  Version="11.1.2.62.76"
+  SelectList="Securityroles.SECROLEID, 
+       Securityroles.SECROLENAME"
+  FromList="SECURITYROLES Securityroles"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Securityroles"
+    Entity="project1.Securityroles"/>
+  <ViewAttribute
+    Name="Secroleid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Secroleid"
+    EntityUsage="Securityroles"
+    AliasName="SECROLEID"/>
+  <ViewAttribute
+    Name="Secrolename"
+    PrecisionRule="true"
+    EntityAttrName="Secrolename"
+    EntityUsage="Securityroles"
+    AliasName="SECROLENAME"/>
+  <ViewLinkAccessor
+    Name="SecuritygroupsView"
+    ViewLink="project1.SecuritygroupsSecgroupidFkLink"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

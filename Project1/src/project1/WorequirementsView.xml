@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="WorequirementsView"
+  Version="11.1.2.62.76"
+  SelectList="Worequirements.ID, 
+       Worequirements.WOREF, 
+       Worequirements.STOCKID, 
+       Worequirements.WRKCENTRE, 
+       Worequirements.UNITSREQ, 
+       Worequirements.STDCOST, 
+       Worequirements.RESOURCETYPE"
+  FromList="WOREQUIREMENTS Worequirements"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Worequirements"
+    Entity="project1.Worequirements"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Worequirements"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Woref"
+    PrecisionRule="true"
+    EntityAttrName="Woref"
+    EntityUsage="Worequirements"
+    AliasName="WOREF"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Worequirements"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Wrkcentre"
+    PrecisionRule="true"
+    EntityAttrName="Wrkcentre"
+    EntityUsage="Worequirements"
+    AliasName="WRKCENTRE"/>
+  <ViewAttribute
+    Name="Unitsreq"
+    PrecisionRule="true"
+    EntityAttrName="Unitsreq"
+    EntityUsage="Worequirements"
+    AliasName="UNITSREQ"/>
+  <ViewAttribute
+    Name="Stdcost"
+    PrecisionRule="true"
+    EntityAttrName="Stdcost"
+    EntityUsage="Worequirements"
+    AliasName="STDCOST"/>
+  <ViewAttribute
+    Name="Resourcetype"
+    PrecisionRule="true"
+    EntityAttrName="Resourcetype"
+    EntityUsage="Worequirements"
+    AliasName="RESOURCETYPE"/>
+</ViewObject>

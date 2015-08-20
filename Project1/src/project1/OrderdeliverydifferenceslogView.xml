@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="OrderdeliverydifferenceslogView"
+  Version="11.1.2.62.76"
+  SelectList="Orderdeliverydifferenceslog.ORDERNO, 
+       Orderdeliverydifferenceslog.INVOICENO, 
+       Orderdeliverydifferenceslog.STOCKID, 
+       Orderdeliverydifferenceslog.QUANTITYDIFF, 
+       Orderdeliverydifferenceslog.DEBTORNO, 
+       Orderdeliverydifferenceslog.BRANCH, 
+       Orderdeliverydifferenceslog.CAN_OR_BO, 
+       Orderdeliverydifferenceslog.ROWID"
+  FromList="ORDERDELIVERYDIFFERENCESLOG Orderdeliverydifferenceslog"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Orderdeliverydifferenceslog"
+    Entity="project1.Orderdeliverydifferenceslog"/>
+  <ViewAttribute
+    Name="Orderno"
+    PrecisionRule="true"
+    EntityAttrName="Orderno"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="ORDERNO"/>
+  <ViewAttribute
+    Name="Invoiceno"
+    PrecisionRule="true"
+    EntityAttrName="Invoiceno"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="INVOICENO"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Quantitydiff"
+    PrecisionRule="true"
+    EntityAttrName="Quantitydiff"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="QUANTITYDIFF"/>
+  <ViewAttribute
+    Name="Debtorno"
+    PrecisionRule="true"
+    EntityAttrName="Debtorno"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="DEBTORNO"/>
+  <ViewAttribute
+    Name="Branch"
+    PrecisionRule="true"
+    EntityAttrName="Branch"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="BRANCH"/>
+  <ViewAttribute
+    Name="CanOrBo"
+    PrecisionRule="true"
+    EntityAttrName="CanOrBo"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="CAN_OR_BO"/>
+  <ViewAttribute
+    Name="Rowid"
+    IsUpdateable="false"
+    PrecisionRule="true"
+    EntityAttrName="Rowid"
+    EntityUsage="Orderdeliverydifferenceslog"
+    AliasName="ROWID"/>
+</ViewObject>

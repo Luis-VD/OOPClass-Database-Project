@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="HoldreasonsView"
+  Version="11.1.2.62.76"
+  SelectList="Holdreasons.REASONCODE, 
+       Holdreasons.REASONDESCRIPTION, 
+       Holdreasons.DISSALLOWINVOICES"
+  FromList="HOLDREASONS Holdreasons"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Holdreasons"
+    Entity="project1.Holdreasons"/>
+  <ViewAttribute
+    Name="Reasoncode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Reasoncode"
+    EntityUsage="Holdreasons"
+    AliasName="REASONCODE"/>
+  <ViewAttribute
+    Name="Reasondescription"
+    PrecisionRule="true"
+    EntityAttrName="Reasondescription"
+    EntityUsage="Holdreasons"
+    AliasName="REASONDESCRIPTION"/>
+  <ViewAttribute
+    Name="Dissallowinvoices"
+    PrecisionRule="true"
+    EntityAttrName="Dissallowinvoices"
+    EntityUsage="Holdreasons"
+    AliasName="DISSALLOWINVOICES"/>
+  <ViewLinkAccessor
+    Name="DebtorsmasterView"
+    ViewLink="project1.Cnt001282Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

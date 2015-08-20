@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001392Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001392Assoc">
+  <ViewLinkDefEnd
+    Name="WorksordersView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.WorksordersView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="WorksordersView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.WorksordersView.Woref"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="WoissuesView"
+    Cardinality="-1"
+    Owner="project1.WoissuesView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="WoissuesView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.WoissuesView.Woref"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

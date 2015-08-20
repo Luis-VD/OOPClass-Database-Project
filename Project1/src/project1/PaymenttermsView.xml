@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PaymenttermsView"
+  Version="11.1.2.62.76"
+  SelectList="Paymentterms.TERMSINDICATOR, 
+       Paymentterms.TERMS, 
+       Paymentterms.DAYSBEFOREDUE, 
+       Paymentterms.DAYINFOLLOWINGMONTH"
+  FromList="PAYMENTTERMS Paymentterms"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Paymentterms"
+    Entity="project1.Paymentterms"/>
+  <ViewAttribute
+    Name="Termsindicator"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Termsindicator"
+    EntityUsage="Paymentterms"
+    AliasName="TERMSINDICATOR"/>
+  <ViewAttribute
+    Name="Terms"
+    PrecisionRule="true"
+    EntityAttrName="Terms"
+    EntityUsage="Paymentterms"
+    AliasName="TERMS"/>
+  <ViewAttribute
+    Name="Daysbeforedue"
+    PrecisionRule="true"
+    EntityAttrName="Daysbeforedue"
+    EntityUsage="Paymentterms"
+    AliasName="DAYSBEFOREDUE"/>
+  <ViewAttribute
+    Name="Dayinfollowingmonth"
+    PrecisionRule="true"
+    EntityAttrName="Dayinfollowingmonth"
+    EntityUsage="Paymentterms"
+    AliasName="DAYINFOLLOWINGMONTH"/>
+  <ViewLinkAccessor
+    Name="DebtorsmasterView"
+    ViewLink="project1.Cnt001284Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="SuppliersView"
+    ViewLink="project1.Cnt001382Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

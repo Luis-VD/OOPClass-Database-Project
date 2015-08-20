@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SalesglpostingsView"
+  Version="11.1.2.62.76"
+  SelectList="Salesglpostings.ID, 
+       Salesglpostings.AREA, 
+       Salesglpostings.STKCAT, 
+       Salesglpostings.DISCOUNTGLCODE, 
+       Salesglpostings.SALESGLCODE, 
+       Salesglpostings.SALESTYPE"
+  FromList="SALESGLPOSTINGS Salesglpostings"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Salesglpostings"
+    Entity="project1.Salesglpostings"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Salesglpostings"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Area"
+    PrecisionRule="true"
+    EntityAttrName="Area"
+    EntityUsage="Salesglpostings"
+    AliasName="AREA"/>
+  <ViewAttribute
+    Name="Stkcat"
+    PrecisionRule="true"
+    EntityAttrName="Stkcat"
+    EntityUsage="Salesglpostings"
+    AliasName="STKCAT"/>
+  <ViewAttribute
+    Name="Discountglcode"
+    PrecisionRule="true"
+    EntityAttrName="Discountglcode"
+    EntityUsage="Salesglpostings"
+    AliasName="DISCOUNTGLCODE"/>
+  <ViewAttribute
+    Name="Salesglcode"
+    PrecisionRule="true"
+    EntityAttrName="Salesglcode"
+    EntityUsage="Salesglpostings"
+    AliasName="SALESGLCODE"/>
+  <ViewAttribute
+    Name="Salestype"
+    PrecisionRule="true"
+    EntityAttrName="Salestype"
+    EntityUsage="Salesglpostings"
+    AliasName="SALESTYPE"/>
+</ViewObject>

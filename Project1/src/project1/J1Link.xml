@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="J1Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.J1Assoc">
+  <ViewLinkDefEnd
+    Name="AccountsectionView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.AccountsectionView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="AccountsectionView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.AccountsectionView.Sectionid"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="AccountgroupsView"
+    Cardinality="-1"
+    Owner="project1.AccountgroupsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="AccountgroupsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.AccountgroupsView.Sectioninaccounts"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Taxauthorities"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="TAXAUTHORITIES"
+  AliasName="Taxauthorities"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Taxid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="TAXID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TAXAUTHORITIES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Description"
+    Precision="255"
+    ColumnName="DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TAXAUTHORITIES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Taxglcode"
+    Precision="8"
+    Scale="0"
+    ColumnName="TAXGLCODE"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TAXAUTHORITIES"/>
+  <Attribute
+    Name="Purchtaxglaccount"
+    Precision="8"
+    Scale="0"
+    ColumnName="PURCHTAXGLACCOUNT"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TAXAUTHORITIES"/>
+  <Attribute
+    Name="Bank"
+    Precision="255"
+    ColumnName="BANK"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TAXAUTHORITIES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Bankacctype"
+    Precision="255"
+    ColumnName="BANKACCTYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TAXAUTHORITIES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Bankacc"
+    Precision="255"
+    ColumnName="BANKACC"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TAXAUTHORITIES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Bankswift"
+    Precision="255"
+    ColumnName="BANKSWIFT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TAXAUTHORITIES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Custbranch"
+    Association="project1.Cnt001275Assoc"
+    AssociationEnd="project1.Cnt001275Assoc.Custbranch"
+    AssociationOtherEnd="project1.Cnt001275Assoc.Taxauthorities"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Taxauthlevels"
+    Association="project1.Cnt001387Assoc"
+    AssociationEnd="project1.Cnt001387Assoc.Taxauthlevels"
+    AssociationOtherEnd="project1.Cnt001387Assoc.Taxauthorities"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Taxauthlevels1"
+    Association="project1.Cnt001386Assoc"
+    AssociationEnd="project1.Cnt001386Assoc.Taxauthlevels1"
+    AssociationOtherEnd="project1.Cnt001386Assoc.Taxauthorities1"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Suppliers"
+    Association="project1.Cnt001383Assoc"
+    AssociationEnd="project1.Cnt001383Assoc.Suppliers"
+    AssociationOtherEnd="project1.Cnt001383Assoc.Taxauthorities"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Chartmaster"
+    Association="project1.Cnt001389Assoc"
+    AssociationEnd="project1.Cnt001389Assoc.Chartmaster"
+    AssociationOtherEnd="project1.Cnt001389Assoc.Taxauthorities"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Chartmaster1"
+    Association="project1.Cnt001390Assoc"
+    AssociationEnd="project1.Cnt001390Assoc.Chartmaster1"
+    AssociationOtherEnd="project1.Cnt001390Assoc.Taxauthorities1"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="TaxauthoritiesPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TAXAUTHORITIES_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Taxauthorities.Taxid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001389">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CHARTMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001389"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Taxauthorities.Taxglcode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001390">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CHARTMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001390"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Taxauthorities.Purchtaxglaccount"/>
+    </AttrArray>
+  </Key>
+</Entity>

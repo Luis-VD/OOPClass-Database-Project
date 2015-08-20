@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PurchdataView"
+  Version="11.1.2.62.76"
+  SelectList="Purchdata.SUPPLIERNO, 
+       Purchdata.STOCKID, 
+       Purchdata.PRICE, 
+       Purchdata.SUPPLIERSUOM, 
+       Purchdata.CONVERSIONFACTOR, 
+       Purchdata.SUPPLIERDESCRIPTION, 
+       Purchdata.LEADTIME, 
+       Purchdata.PREFERRED"
+  FromList="PURCHDATA Purchdata"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Purchdata"
+    Entity="project1.Purchdata"/>
+  <ViewAttribute
+    Name="Supplierno"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Supplierno"
+    EntityUsage="Purchdata"
+    AliasName="SUPPLIERNO"/>
+  <ViewAttribute
+    Name="Stockid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Purchdata"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Price"
+    PrecisionRule="true"
+    EntityAttrName="Price"
+    EntityUsage="Purchdata"
+    AliasName="PRICE"/>
+  <ViewAttribute
+    Name="Suppliersuom"
+    PrecisionRule="true"
+    EntityAttrName="Suppliersuom"
+    EntityUsage="Purchdata"
+    AliasName="SUPPLIERSUOM"/>
+  <ViewAttribute
+    Name="Conversionfactor"
+    PrecisionRule="true"
+    EntityAttrName="Conversionfactor"
+    EntityUsage="Purchdata"
+    AliasName="CONVERSIONFACTOR"/>
+  <ViewAttribute
+    Name="Supplierdescription"
+    PrecisionRule="true"
+    EntityAttrName="Supplierdescription"
+    EntityUsage="Purchdata"
+    AliasName="SUPPLIERDESCRIPTION"/>
+  <ViewAttribute
+    Name="Leadtime"
+    PrecisionRule="true"
+    EntityAttrName="Leadtime"
+    EntityUsage="Purchdata"
+    AliasName="LEADTIME"/>
+  <ViewAttribute
+    Name="Preferred"
+    PrecisionRule="true"
+    EntityAttrName="Preferred"
+    EntityUsage="Purchdata"
+    AliasName="PREFERRED"/>
+</ViewObject>

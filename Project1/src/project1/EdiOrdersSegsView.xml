@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EdiOrdersSegsView"
+  Version="11.1.2.62.76"
+  SelectList="EdiOrdersSegs.ID, 
+       EdiOrdersSegs.SEGTAG, 
+       EdiOrdersSegs.SEGGROUP, 
+       EdiOrdersSegs.MAXOCCUR"
+  FromList="EDI_ORDERS_SEGS EdiOrdersSegs"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="EdiOrdersSegs"
+    Entity="project1.EdiOrdersSegs"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="EdiOrdersSegs"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Segtag"
+    PrecisionRule="true"
+    EntityAttrName="Segtag"
+    EntityUsage="EdiOrdersSegs"
+    AliasName="SEGTAG"/>
+  <ViewAttribute
+    Name="Seggroup"
+    PrecisionRule="true"
+    EntityAttrName="Seggroup"
+    EntityUsage="EdiOrdersSegs"
+    AliasName="SEGGROUP"/>
+  <ViewAttribute
+    Name="Maxoccur"
+    PrecisionRule="true"
+    EntityAttrName="Maxoccur"
+    EntityUsage="EdiOrdersSegs"
+    AliasName="MAXOCCUR"/>
+</ViewObject>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EdiOrdersSegGroupsView"
+  Version="11.1.2.62.76"
+  SelectList="EdiOrdersSegGroups.SEGGROUPNO, 
+       EdiOrdersSegGroups.MAXOCCUR, 
+       EdiOrdersSegGroups.PARENTSEGGROUP"
+  FromList="EDI_ORDERS_SEG_GROUPS EdiOrdersSegGroups"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="EdiOrdersSegGroups"
+    Entity="project1.EdiOrdersSegGroups"/>
+  <ViewAttribute
+    Name="Seggroupno"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Seggroupno"
+    EntityUsage="EdiOrdersSegGroups"
+    AliasName="SEGGROUPNO"/>
+  <ViewAttribute
+    Name="Maxoccur"
+    PrecisionRule="true"
+    EntityAttrName="Maxoccur"
+    EntityUsage="EdiOrdersSegGroups"
+    AliasName="MAXOCCUR"/>
+  <ViewAttribute
+    Name="Parentseggroup"
+    PrecisionRule="true"
+    EntityAttrName="Parentseggroup"
+    EntityUsage="EdiOrdersSegGroups"
+    AliasName="PARENTSEGGROUP"/>
+</ViewObject>

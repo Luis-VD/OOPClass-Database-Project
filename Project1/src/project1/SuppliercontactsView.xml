@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SuppliercontactsView"
+  Version="11.1.2.62.76"
+  SelectList='Suppliercontacts.SUPPLIERID, 
+       Suppliercontacts.CONTACT, 
+       Suppliercontacts."position", 
+       Suppliercontacts.TEL, 
+       Suppliercontacts.FAX, 
+       Suppliercontacts.MOBILE, 
+       Suppliercontacts.EMAIL, 
+       Suppliercontacts.ORDERCONTACT'
+  FromList="SUPPLIERCONTACTS Suppliercontacts"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Suppliercontacts"
+    Entity="project1.Suppliercontacts"/>
+  <ViewAttribute
+    Name="Supplierid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Supplierid"
+    EntityUsage="Suppliercontacts"
+    AliasName="SUPPLIERID"/>
+  <ViewAttribute
+    Name="Contact"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Contact"
+    EntityUsage="Suppliercontacts"
+    AliasName="CONTACT"/>
+  <ViewAttribute
+    Name="Position"
+    PrecisionRule="true"
+    EntityAttrName="Position"
+    EntityUsage="Suppliercontacts"
+    AliasName='"position"'/>
+  <ViewAttribute
+    Name="Tel"
+    PrecisionRule="true"
+    EntityAttrName="Tel"
+    EntityUsage="Suppliercontacts"
+    AliasName="TEL"/>
+  <ViewAttribute
+    Name="Fax"
+    PrecisionRule="true"
+    EntityAttrName="Fax"
+    EntityUsage="Suppliercontacts"
+    AliasName="FAX"/>
+  <ViewAttribute
+    Name="Mobile"
+    PrecisionRule="true"
+    EntityAttrName="Mobile"
+    EntityUsage="Suppliercontacts"
+    AliasName="MOBILE"/>
+  <ViewAttribute
+    Name="Email"
+    PrecisionRule="true"
+    EntityAttrName="Email"
+    EntityUsage="Suppliercontacts"
+    AliasName="EMAIL"/>
+  <ViewAttribute
+    Name="Ordercontact"
+    PrecisionRule="true"
+    EntityAttrName="Ordercontact"
+    EntityUsage="Suppliercontacts"
+    AliasName="ORDERCONTACT"/>
+</ViewObject>

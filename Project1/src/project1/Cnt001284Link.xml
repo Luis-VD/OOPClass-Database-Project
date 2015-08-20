@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001284Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001284Assoc">
+  <ViewLinkDefEnd
+    Name="PaymenttermsView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.PaymenttermsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="PaymenttermsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.PaymenttermsView.Termsindicator"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="DebtorsmasterView"
+    Cardinality="-1"
+    Owner="project1.DebtorsmasterView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="DebtorsmasterView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.DebtorsmasterView.Paymentterms"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

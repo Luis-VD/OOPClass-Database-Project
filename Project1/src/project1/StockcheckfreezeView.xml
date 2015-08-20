@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StockcheckfreezeView"
+  Version="11.1.2.62.76"
+  SelectList="Stockcheckfreeze.STOCKID, 
+       Stockcheckfreeze.LOCCODE, 
+       Stockcheckfreeze.QOH"
+  FromList="STOCKCHECKFREEZE Stockcheckfreeze"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Stockcheckfreeze"
+    Entity="project1.Stockcheckfreeze"/>
+  <ViewAttribute
+    Name="Stockid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Stockcheckfreeze"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Loccode"
+    PrecisionRule="true"
+    EntityAttrName="Loccode"
+    EntityUsage="Stockcheckfreeze"
+    AliasName="LOCCODE"/>
+  <ViewAttribute
+    Name="Qoh"
+    PrecisionRule="true"
+    EntityAttrName="Qoh"
+    EntityUsage="Stockcheckfreeze"
+    AliasName="QOH"/>
+</ViewObject>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001373Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001373Assoc">
+  <ViewLinkDefEnd
+    Name="SupptransView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.SupptransView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="SupptransView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.SupptransView.Id"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="SuppallocsView1"
+    Cardinality="-1"
+    Owner="project1.SuppallocsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="SuppallocsView1"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.SuppallocsView.TransidAllocfrom"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

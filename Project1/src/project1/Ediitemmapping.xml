@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Ediitemmapping"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="EDIITEMMAPPING"
+  AliasName="Ediitemmapping"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Supporcust"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="SUPPORCUST"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="EDIITEMMAPPING"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Partnercode"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="PARTNERCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="EDIITEMMAPPING"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Stockid"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="STOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="EDIITEMMAPPING"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Partnerstockid"
+    Precision="255"
+    ColumnName="PARTNERSTOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="EDIITEMMAPPING">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="EdiitemmappingPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="EDIITEMMAPPING_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Ediitemmapping.Supporcust"/>
+      <Item Value="project1.Ediitemmapping.Partnercode"/>
+      <Item Value="project1.Ediitemmapping.Stockid"/>
+    </AttrArray>
+  </Key>
+</Entity>

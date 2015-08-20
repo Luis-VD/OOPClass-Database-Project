@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Custbranch"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="CUSTBRANCH"
+  AliasName="Custbranch"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Branchcode"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="BRANCHCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Debtorno"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="DEBTORNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Brname"
+    Precision="255"
+    ColumnName="BRNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Braddress1"
+    Precision="255"
+    ColumnName="BRADDRESS1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Braddress2"
+    Precision="255"
+    ColumnName="BRADDRESS2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Braddress3"
+    Precision="255"
+    ColumnName="BRADDRESS3"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Braddress4"
+    Precision="255"
+    ColumnName="BRADDRESS4"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Estdeliverydays"
+    Precision="8"
+    Scale="0"
+    ColumnName="ESTDELIVERYDAYS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CUSTBRANCH"/>
+  <Attribute
+    Name="Area"
+    Precision="255"
+    ColumnName="AREA"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Salesman"
+    Precision="255"
+    ColumnName="SALESMAN"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Fwddate"
+    Precision="8"
+    Scale="0"
+    ColumnName="FWDDATE"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CUSTBRANCH"/>
+  <Attribute
+    Name="Phoneno"
+    Precision="255"
+    ColumnName="PHONENO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Faxno"
+    Precision="255"
+    ColumnName="FAXNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Contactname"
+    Precision="255"
+    ColumnName="CONTACTNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Email"
+    Precision="255"
+    ColumnName="EMAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Defaultlocation"
+    Precision="255"
+    ColumnName="DEFAULTLOCATION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Taxauthority"
+    Precision="8"
+    Scale="0"
+    ColumnName="TAXAUTHORITY"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CUSTBRANCH"/>
+  <Attribute
+    Name="Defaultshipvia"
+    Precision="8"
+    Scale="0"
+    ColumnName="DEFAULTSHIPVIA"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CUSTBRANCH"/>
+  <Attribute
+    Name="Disabletrans"
+    Precision="8"
+    Scale="0"
+    ColumnName="DISABLETRANS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CUSTBRANCH"/>
+  <Attribute
+    Name="Brpostaddr1"
+    Precision="255"
+    ColumnName="BRPOSTADDR1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Brpostaddr2"
+    Precision="255"
+    ColumnName="BRPOSTADDR2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Brpostaddr3"
+    Precision="255"
+    ColumnName="BRPOSTADDR3"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Brpostaddr4"
+    Precision="255"
+    ColumnName="BRPOSTADDR4"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Custbranchcode"
+    Precision="255"
+    ColumnName="CUSTBRANCHCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CUSTBRANCH">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Deliverblind"
+    Precision="8"
+    Scale="0"
+    ColumnName="DELIVERBLIND"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CUSTBRANCH"/>
+  <AccessorAttribute
+    Name="Contracts"
+    Association="project1.Cnt001263Assoc"
+    AssociationEnd="project1.Cnt001263Assoc.Contracts"
+    AssociationOtherEnd="project1.Cnt001263Assoc.Custbranch"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Areas"
+    Association="project1.Cnt001272Assoc"
+    AssociationEnd="project1.Cnt001272Assoc.Areas"
+    AssociationOtherEnd="project1.Cnt001272Assoc.Custbranch"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Debtorsmaster"
+    Association="project1.Cnt001271Assoc"
+    AssociationEnd="project1.Cnt001271Assoc.Debtorsmaster"
+    AssociationOtherEnd="project1.Cnt001271Assoc.Custbranch"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001274Assoc"
+    AssociationEnd="project1.Cnt001274Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001274Assoc.Custbranch"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Orderdeliverydifferenceslog"
+    Association="project1.Cnt001314Assoc"
+    AssociationEnd="project1.Cnt001314Assoc.Orderdeliverydifferenceslog"
+    AssociationOtherEnd="project1.Cnt001314Assoc.Custbranch"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Salesman1"
+    Association="project1.Cnt001273Assoc"
+    AssociationEnd="project1.Cnt001273Assoc.Salesman1"
+    AssociationOtherEnd="project1.Cnt001273Assoc.Custbranch"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Salesorders"
+    Association="project1.Cnt001340Assoc"
+    AssociationEnd="project1.Cnt001340Assoc.Salesorders"
+    AssociationOtherEnd="project1.Cnt001340Assoc.Custbranch"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Shippers"
+    Association="project1.Cnt001276Assoc"
+    AssociationEnd="project1.Cnt001276Assoc.Shippers"
+    AssociationOtherEnd="project1.Cnt001276Assoc.Custbranch"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Taxauthorities"
+    Association="project1.Cnt001275Assoc"
+    AssociationEnd="project1.Cnt001275Assoc.Taxauthorities"
+    AssociationOtherEnd="project1.Cnt001275Assoc.Custbranch"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="CustbranchPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CUSTBRANCH_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Branchcode"/>
+      <Item Value="project1.Custbranch.Debtorno"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001271">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="DEBTORSMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001271"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Debtorno"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001272">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="AREAS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001272"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Area"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001273">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SALESMAN_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001273"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Salesman"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001274">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001274"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Defaultlocation"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001275">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TAXAUTHORITIES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001275"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Taxauthority"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001276">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SHIPPERS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001276"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Custbranch.Defaultshipvia"/>
+    </AttrArray>
+  </Key>
+</Entity>

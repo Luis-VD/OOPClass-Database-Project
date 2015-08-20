@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Accountsection"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="ACCOUNTSECTION"
+  AliasName="Accountsection"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Sectionid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="SECTIONID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="ACCOUNTSECTION"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Sectionname"
+    Precision="255"
+    ColumnName="SECTIONNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ACCOUNTSECTION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Accountgroups"
+    Association="project1.J1Assoc"
+    AssociationEnd="project1.J1Assoc.Accountgroups"
+    AssociationOtherEnd="project1.J1Assoc.Accountsection"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="AccountsectionPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="ACCOUNTSECTION_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Accountsection.Sectionid"/>
+    </AttrArray>
+  </Key>
+</Entity>

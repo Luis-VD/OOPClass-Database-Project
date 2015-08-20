@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Loctransfers"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="LOCTRANSFERS"
+  AliasName="Loctransfers"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Reference"
+    Precision="8"
+    Scale="0"
+    ColumnName="REFERENCE"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="LOCTRANSFERS"/>
+  <Attribute
+    Name="Stockid"
+    Precision="255"
+    ColumnName="STOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="LOCTRANSFERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Shipqty"
+    Precision="8"
+    Scale="0"
+    ColumnName="SHIPQTY"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="LOCTRANSFERS"/>
+  <Attribute
+    Name="Recqty"
+    Precision="8"
+    Scale="0"
+    ColumnName="RECQTY"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="LOCTRANSFERS"/>
+  <Attribute
+    Name="Shipdate"
+    Precision="20"
+    ColumnName="SHIPDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="LOCTRANSFERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Recdate"
+    Precision="20"
+    ColumnName="RECDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="LOCTRANSFERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Shiploc"
+    Precision="255"
+    ColumnName="SHIPLOC"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="LOCTRANSFERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Recloc"
+    Precision="255"
+    ColumnName="RECLOC"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="LOCTRANSFERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Rowid"
+    IsUpdateable="false"
+    ColumnName="ROWID"
+    SQLType="ROWID"
+    Type="oracle.jbo.domain.RowID"
+    ColumnType="ROWID"
+    TableName="LOCTRANSFERS"
+    PrimaryKey="true"/>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001308Assoc"
+    AssociationEnd="project1.Cnt001308Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001308Assoc.Loctransfers"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Locations1"
+    Association="project1.Cnt001309Assoc"
+    AssociationEnd="project1.Cnt001309Assoc.Locations1"
+    AssociationOtherEnd="project1.Cnt001309Assoc.Loctransfers1"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Stockmaster"
+    Association="project1.Cnt001310Assoc"
+    AssociationEnd="project1.Cnt001310Assoc.Stockmaster"
+    AssociationOtherEnd="project1.Cnt001310Assoc.Loctransfers"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="Cnt001308">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001308"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Loctransfers.Shiploc"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001309">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001309"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Loctransfers.Recloc"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001310">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001310"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Loctransfers.Stockid"/>
+    </AttrArray>
+  </Key>
+</Entity>

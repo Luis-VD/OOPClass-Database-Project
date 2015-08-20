@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Supptrans"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="SUPPTRANS"
+  AliasName="Supptrans"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Transno"
+    Precision="8"
+    Scale="0"
+    ColumnName="TRANSNO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Type"
+    Precision="8"
+    Scale="0"
+    ColumnName='"type"'
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Supplierno"
+    Precision="255"
+    ColumnName="SUPPLIERNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPTRANS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Suppreference"
+    Precision="255"
+    ColumnName="SUPPREFERENCE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPTRANS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Trandate"
+    Precision="20"
+    ColumnName="TRANDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPTRANS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Duedate"
+    Precision="20"
+    ColumnName="DUEDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPTRANS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Settled"
+    Precision="8"
+    Scale="0"
+    ColumnName="SETTLED"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Rate"
+    Precision="16"
+    Scale="6"
+    ColumnName="RATE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Ovamount"
+    Precision="16"
+    Scale="4"
+    ColumnName="OVAMOUNT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Ovgst"
+    Precision="16"
+    Scale="4"
+    ColumnName="OVGST"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Diffonexch"
+    Precision="16"
+    Scale="4"
+    ColumnName="DIFFONEXCH"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Alloc"
+    Precision="16"
+    Scale="4"
+    ColumnName="ALLOC"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Transtext"
+    Precision="500"
+    ColumnName="TRANSTEXT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPTRANS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="500"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Hold"
+    Precision="8"
+    Scale="0"
+    ColumnName='"hold"'
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"/>
+  <Attribute
+    Name="Id"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SUPPTRANS"
+    PrimaryKey="true"/>
+  <AccessorAttribute
+    Name="Suppallocs"
+    Association="project1.Cnt001374Assoc"
+    AssociationEnd="project1.Cnt001374Assoc.Suppallocs"
+    AssociationOtherEnd="project1.Cnt001374Assoc.Supptrans"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Suppallocs1"
+    Association="project1.Cnt001373Assoc"
+    AssociationEnd="project1.Cnt001373Assoc.Suppallocs1"
+    AssociationOtherEnd="project1.Cnt001373Assoc.Supptrans1"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Suppliers"
+    Association="project1.Cnt001377Assoc"
+    AssociationEnd="project1.Cnt001377Assoc.Suppliers"
+    AssociationOtherEnd="project1.Cnt001377Assoc.Supptrans"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Systypes"
+    Association="project1.Cnt001376Assoc"
+    AssociationEnd="project1.Cnt001376Assoc.Systypes"
+    AssociationOtherEnd="project1.Cnt001376Assoc.Supptrans"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="SupptransPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SUPPTRANS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Supptrans.Id"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001376">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SYSTYPES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001376"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Supptrans.Type"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001377">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SUPPLIERS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001377"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Supptrans.Supplierno"/>
+    </AttrArray>
+  </Key>
+</Entity>

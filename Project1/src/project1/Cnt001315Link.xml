@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001315Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001315Assoc">
+  <ViewLinkDefEnd
+    Name="SalesordersView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.SalesordersView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="SalesordersView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.SalesordersView.Orderno"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="OrderdeliverydifferenceslogView"
+    Cardinality="-1"
+    Owner="project1.OrderdeliverydifferenceslogView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="OrderdeliverydifferenceslogView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.OrderdeliverydifferenceslogView.Orderno"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

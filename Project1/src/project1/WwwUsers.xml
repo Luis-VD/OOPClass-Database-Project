@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="WwwUsers"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="WWW_USERS"
+  AliasName="WwwUsers"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Userid"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="USERID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Password"
+    Precision="255"
+    ColumnName='"password"'
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Realname"
+    Precision="255"
+    ColumnName="REALNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Customerid"
+    Precision="255"
+    ColumnName="CUSTOMERID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Phone"
+    Precision="255"
+    ColumnName="PHONE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Email"
+    Precision="255"
+    ColumnName="EMAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Defaultlocation"
+    Precision="255"
+    ColumnName="DEFAULTLOCATION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Fullaccess"
+    Precision="8"
+    Scale="0"
+    ColumnName="FULLACCESS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="WWW_USERS"/>
+  <Attribute
+    Name="Lastvisitdate"
+    Precision="30"
+    ColumnName="LASTVISITDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Branchcode"
+    Precision="255"
+    ColumnName="BRANCHCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Pagesize"
+    Precision="255"
+    ColumnName="PAGESIZE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Modulesallowed"
+    Precision="255"
+    ColumnName="MODULESALLOWED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Blocked"
+    Precision="8"
+    Scale="0"
+    ColumnName="BLOCKED"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="WWW_USERS"/>
+  <Attribute
+    Name="Displayrecordsmax"
+    Precision="8"
+    Scale="0"
+    ColumnName="DISPLAYRECORDSMAX"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="WWW_USERS"/>
+  <Attribute
+    Name="Theme"
+    Precision="255"
+    ColumnName="THEME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Language"
+    Precision="255"
+    ColumnName='"language"'
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Pinno"
+    Precision="255"
+    ColumnName="PINNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Swipecard"
+    Precision="255"
+    ColumnName="SWIPECARD"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="WWW_USERS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001400Assoc"
+    AssociationEnd="project1.Cnt001400Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001400Assoc.WwwUsers"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="WwwUsersPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="WWW_USERS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.WwwUsers.Userid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001400">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001400"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.WwwUsers.Defaultlocation"/>
+    </AttrArray>
+  </Key>
+</Entity>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001319Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001319Assoc">
+  <ViewLinkDefEnd
+    Name="StockmasterView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.StockmasterView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="StockmasterView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.StockmasterView.Stockid"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="PricesView"
+    Cardinality="-1"
+    Owner="project1.PricesView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="PricesView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.PricesView.Stockid"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

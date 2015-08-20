@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001269Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001269Assoc">
+  <ViewLinkDefEnd
+    Name="DebtortransView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.DebtortransView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="DebtortransView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.DebtortransView.Id"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="CustallocnsView"
+    Cardinality="-1"
+    Owner="project1.CustallocnsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="CustallocnsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.CustallocnsView.TransidAllocto"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

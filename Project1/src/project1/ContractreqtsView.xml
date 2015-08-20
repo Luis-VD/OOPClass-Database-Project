@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ContractreqtsView"
+  Version="11.1.2.62.76"
+  SelectList="Contractreqts.CONTRACTREQID, 
+       Contractreqts.CONTRACT, 
+       Contractreqts.COMPONENT, 
+       Contractreqts.QUANTITY, 
+       Contractreqts.PRICEPERUNIT"
+  FromList="CONTRACTREQTS Contractreqts"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Contractreqts"
+    Entity="project1.Contractreqts"/>
+  <ViewAttribute
+    Name="Contractreqid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Contractreqid"
+    EntityUsage="Contractreqts"
+    AliasName="CONTRACTREQID"/>
+  <ViewAttribute
+    Name="Contract"
+    PrecisionRule="true"
+    EntityAttrName="Contract"
+    EntityUsage="Contractreqts"
+    AliasName="CONTRACT"/>
+  <ViewAttribute
+    Name="Component1"
+    PrecisionRule="true"
+    EntityAttrName="Component1"
+    EntityUsage="Contractreqts"
+    AliasName="COMPONENT"/>
+  <ViewAttribute
+    Name="Quantity"
+    PrecisionRule="true"
+    EntityAttrName="Quantity"
+    EntityUsage="Contractreqts"
+    AliasName="QUANTITY"/>
+  <ViewAttribute
+    Name="Priceperunit"
+    PrecisionRule="true"
+    EntityAttrName="Priceperunit"
+    EntityUsage="Contractreqts"
+    AliasName="PRICEPERUNIT"/>
+</ViewObject>

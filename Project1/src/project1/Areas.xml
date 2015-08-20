@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Areas"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="AREAS"
+  AliasName="Areas"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Areacode"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="AREACODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="AREAS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Areadescription"
+    Precision="255"
+    ColumnName="AREADESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="AREAS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Custbranch"
+    Association="project1.Cnt001272Assoc"
+    AssociationEnd="project1.Cnt001272Assoc.Custbranch"
+    AssociationOtherEnd="project1.Cnt001272Assoc.Areas"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="AreasPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="AREAS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Areas.Areacode"/>
+    </AttrArray>
+  </Key>
+</Entity>

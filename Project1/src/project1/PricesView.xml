@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PricesView"
+  Version="11.1.2.62.76"
+  SelectList="Prices.STOCKID, 
+       Prices.TYPEABBREV, 
+       Prices.CURRABREV, 
+       Prices.DEBTORNO, 
+       Prices.PRICE, 
+       Prices.BRANCHCODE, 
+       Prices.ROWID"
+  FromList="PRICES Prices"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Prices"
+    Entity="project1.Prices"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Prices"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Typeabbrev"
+    PrecisionRule="true"
+    EntityAttrName="Typeabbrev"
+    EntityUsage="Prices"
+    AliasName="TYPEABBREV"/>
+  <ViewAttribute
+    Name="Currabrev"
+    PrecisionRule="true"
+    EntityAttrName="Currabrev"
+    EntityUsage="Prices"
+    AliasName="CURRABREV"/>
+  <ViewAttribute
+    Name="Debtorno"
+    PrecisionRule="true"
+    EntityAttrName="Debtorno"
+    EntityUsage="Prices"
+    AliasName="DEBTORNO"/>
+  <ViewAttribute
+    Name="Price"
+    PrecisionRule="true"
+    EntityAttrName="Price"
+    EntityUsage="Prices"
+    AliasName="PRICE"/>
+  <ViewAttribute
+    Name="Branchcode"
+    PrecisionRule="true"
+    EntityAttrName="Branchcode"
+    EntityUsage="Prices"
+    AliasName="BRANCHCODE"/>
+  <ViewAttribute
+    Name="Rowid"
+    IsUpdateable="false"
+    PrecisionRule="true"
+    EntityAttrName="Rowid"
+    EntityUsage="Prices"
+    AliasName="ROWID"/>
+</ViewObject>

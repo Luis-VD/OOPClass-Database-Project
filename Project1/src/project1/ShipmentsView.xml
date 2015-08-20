@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ShipmentsView"
+  Version="11.1.2.62.76"
+  SelectList="Shipments.SHIPTREF, 
+       Shipments.VOYAGEREF, 
+       Shipments.VESSEL, 
+       Shipments.ETA, 
+       Shipments.ACCUMVALUE, 
+       Shipments.SUPPLIERID, 
+       Shipments.CLOSED"
+  FromList="SHIPMENTS Shipments"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Shipments"
+    Entity="project1.Shipments"/>
+  <ViewAttribute
+    Name="Shiptref"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Shiptref"
+    EntityUsage="Shipments"
+    AliasName="SHIPTREF"/>
+  <ViewAttribute
+    Name="Voyageref"
+    PrecisionRule="true"
+    EntityAttrName="Voyageref"
+    EntityUsage="Shipments"
+    AliasName="VOYAGEREF"/>
+  <ViewAttribute
+    Name="Vessel"
+    PrecisionRule="true"
+    EntityAttrName="Vessel"
+    EntityUsage="Shipments"
+    AliasName="VESSEL"/>
+  <ViewAttribute
+    Name="Eta"
+    PrecisionRule="true"
+    EntityAttrName="Eta"
+    EntityUsage="Shipments"
+    AliasName="ETA"/>
+  <ViewAttribute
+    Name="Accumvalue"
+    PrecisionRule="true"
+    EntityAttrName="Accumvalue"
+    EntityUsage="Shipments"
+    AliasName="ACCUMVALUE"/>
+  <ViewAttribute
+    Name="Supplierid"
+    PrecisionRule="true"
+    EntityAttrName="Supplierid"
+    EntityUsage="Shipments"
+    AliasName="SUPPLIERID"/>
+  <ViewAttribute
+    Name="Closed"
+    PrecisionRule="true"
+    EntityAttrName="Closed"
+    EntityUsage="Shipments"
+    AliasName="CLOSED"/>
+  <ViewLinkAccessor
+    Name="ShipmentchargesView"
+    ViewLink="project1.Cnt001347Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

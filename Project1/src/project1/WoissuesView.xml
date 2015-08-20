@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="WoissuesView"
+  Version="11.1.2.62.76"
+  SelectList="Woissues.ISSUENO, 
+       Woissues.WOREF, 
+       Woissues.STOCKID, 
+       Woissues.ISSUETYPE, 
+       Woissues.WORKCENTRE, 
+       Woissues.QTYISSUED, 
+       Woissues.STDCOST, 
+       Woissues.ROWID"
+  FromList="WOISSUES Woissues"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Woissues"
+    Entity="project1.Woissues"/>
+  <ViewAttribute
+    Name="Issueno"
+    PrecisionRule="true"
+    EntityAttrName="Issueno"
+    EntityUsage="Woissues"
+    AliasName="ISSUENO"/>
+  <ViewAttribute
+    Name="Woref"
+    PrecisionRule="true"
+    EntityAttrName="Woref"
+    EntityUsage="Woissues"
+    AliasName="WOREF"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Woissues"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Issuetype"
+    PrecisionRule="true"
+    EntityAttrName="Issuetype"
+    EntityUsage="Woissues"
+    AliasName="ISSUETYPE"/>
+  <ViewAttribute
+    Name="Workcentre"
+    PrecisionRule="true"
+    EntityAttrName="Workcentre"
+    EntityUsage="Woissues"
+    AliasName="WORKCENTRE"/>
+  <ViewAttribute
+    Name="Qtyissued"
+    PrecisionRule="true"
+    EntityAttrName="Qtyissued"
+    EntityUsage="Woissues"
+    AliasName="QTYISSUED"/>
+  <ViewAttribute
+    Name="Stdcost"
+    PrecisionRule="true"
+    EntityAttrName="Stdcost"
+    EntityUsage="Woissues"
+    AliasName="STDCOST"/>
+  <ViewAttribute
+    Name="Rowid"
+    IsUpdateable="false"
+    PrecisionRule="true"
+    EntityAttrName="Rowid"
+    EntityUsage="Woissues"
+    AliasName="ROWID"/>
+</ViewObject>

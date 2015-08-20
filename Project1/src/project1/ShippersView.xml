@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ShippersView"
+  Version="11.1.2.62.76"
+  SelectList="Shippers.SHIPPER_ID, 
+       Shippers.SHIPPERNAME, 
+       Shippers.MINCHARGE"
+  FromList="SHIPPERS Shippers"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Shippers"
+    Entity="project1.Shippers"/>
+  <ViewAttribute
+    Name="ShipperId"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="ShipperId"
+    EntityUsage="Shippers"
+    AliasName="SHIPPER_ID"/>
+  <ViewAttribute
+    Name="Shippername"
+    PrecisionRule="true"
+    EntityAttrName="Shippername"
+    EntityUsage="Shippers"
+    AliasName="SHIPPERNAME"/>
+  <ViewAttribute
+    Name="Mincharge"
+    PrecisionRule="true"
+    EntityAttrName="Mincharge"
+    EntityUsage="Shippers"
+    AliasName="MINCHARGE"/>
+  <ViewLinkAccessor
+    Name="CustbranchView"
+    ViewLink="project1.Cnt001276Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="SalesordersView"
+    ViewLink="project1.Cnt001341Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="FreightcostsView"
+    ViewLink="project1.Cnt001294Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

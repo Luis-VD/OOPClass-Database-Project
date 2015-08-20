@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CurrenciesView"
+  Version="11.1.2.62.76"
+  SelectList="Currencies.CURRENCY, 
+       Currencies.CURRABREV, 
+       Currencies.COUNTRY, 
+       Currencies.HUNDREDSNAME, 
+       Currencies.RATE"
+  FromList="CURRENCIES Currencies"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Currencies"
+    Entity="project1.Currencies"/>
+  <ViewAttribute
+    Name="Currency"
+    PrecisionRule="true"
+    EntityAttrName="Currency"
+    EntityUsage="Currencies"
+    AliasName="CURRENCY"/>
+  <ViewAttribute
+    Name="Currabrev"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Currabrev"
+    EntityUsage="Currencies"
+    AliasName="CURRABREV"/>
+  <ViewAttribute
+    Name="Country"
+    PrecisionRule="true"
+    EntityAttrName="Country"
+    EntityUsage="Currencies"
+    AliasName="COUNTRY"/>
+  <ViewAttribute
+    Name="Hundredsname"
+    PrecisionRule="true"
+    EntityAttrName="Hundredsname"
+    EntityUsage="Currencies"
+    AliasName="HUNDREDSNAME"/>
+  <ViewAttribute
+    Name="Rate"
+    PrecisionRule="true"
+    EntityAttrName="Rate"
+    EntityUsage="Currencies"
+    AliasName="RATE"/>
+  <ViewLinkAccessor
+    Name="DebtorsmasterView"
+    ViewLink="project1.Cnt001283Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="PricesView"
+    ViewLink="project1.Cnt001320Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="SuppliersView"
+    ViewLink="project1.Cnt001381Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AccountgroupsView"
+  Version="11.1.2.62.76"
+  SelectList="Accountgroups.GROUPNAME, 
+       Accountgroups.SECTIONINACCOUNTS, 
+       Accountgroups.PANDL, 
+       Accountgroups.SEQUENCEINTB"
+  FromList="ACCOUNTGROUPS Accountgroups"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Accountgroups"
+    Entity="project1.Accountgroups"/>
+  <ViewAttribute
+    Name="Groupname"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Groupname"
+    EntityUsage="Accountgroups"
+    AliasName="GROUPNAME"/>
+  <ViewAttribute
+    Name="Sectioninaccounts"
+    PrecisionRule="true"
+    EntityAttrName="Sectioninaccounts"
+    EntityUsage="Accountgroups"
+    AliasName="SECTIONINACCOUNTS"/>
+  <ViewAttribute
+    Name="Pandl"
+    PrecisionRule="true"
+    EntityAttrName="Pandl"
+    EntityUsage="Accountgroups"
+    AliasName="PANDL"/>
+  <ViewAttribute
+    Name="Sequenceintb"
+    PrecisionRule="true"
+    EntityAttrName="Sequenceintb"
+    EntityUsage="Accountgroups"
+    AliasName="SEQUENCEINTB"/>
+  <ViewLinkAccessor
+    Name="ChartmasterView"
+    ViewLink="project1.Cnt001254Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

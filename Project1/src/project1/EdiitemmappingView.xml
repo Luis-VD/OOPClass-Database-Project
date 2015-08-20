@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EdiitemmappingView"
+  Version="11.1.2.62.76"
+  SelectList="Ediitemmapping.SUPPORCUST, 
+       Ediitemmapping.PARTNERCODE, 
+       Ediitemmapping.STOCKID, 
+       Ediitemmapping.PARTNERSTOCKID"
+  FromList="EDIITEMMAPPING Ediitemmapping"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Ediitemmapping"
+    Entity="project1.Ediitemmapping"/>
+  <ViewAttribute
+    Name="Supporcust"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Supporcust"
+    EntityUsage="Ediitemmapping"
+    AliasName="SUPPORCUST"/>
+  <ViewAttribute
+    Name="Partnercode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Partnercode"
+    EntityUsage="Ediitemmapping"
+    AliasName="PARTNERCODE"/>
+  <ViewAttribute
+    Name="Stockid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Ediitemmapping"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Partnerstockid"
+    PrecisionRule="true"
+    EntityAttrName="Partnerstockid"
+    EntityUsage="Ediitemmapping"
+    AliasName="PARTNERSTOCKID"/>
+</ViewObject>

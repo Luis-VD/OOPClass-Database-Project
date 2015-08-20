@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ChartmasterView"
+  Version="11.1.2.62.76"
+  SelectList="Chartmaster.ACCOUNTCODE, 
+       Chartmaster.ACCOUNTNAME, 
+       Chartmaster.GROUP_"
+  FromList="CHARTMASTER Chartmaster"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Chartmaster"
+    Entity="project1.Chartmaster"/>
+  <ViewAttribute
+    Name="Accountcode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Accountcode"
+    EntityUsage="Chartmaster"
+    AliasName="ACCOUNTCODE"/>
+  <ViewAttribute
+    Name="Accountname"
+    PrecisionRule="true"
+    EntityAttrName="Accountname"
+    EntityUsage="Chartmaster"
+    AliasName="ACCOUNTNAME"/>
+  <ViewAttribute
+    Name="Group1"
+    PrecisionRule="true"
+    EntityAttrName="Group1"
+    EntityUsage="Chartmaster"
+    AliasName="GROUP_"/>
+  <ViewLinkAccessor
+    Name="BankaccountsView"
+    ViewLink="project1.Cnt001243Link"
+    Type="oracle.jbo.Row"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="ChartdetailsView"
+    ViewLink="project1.Cnt001251Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="GltransView"
+    ViewLink="project1.Cnt001296Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="TaxauthoritiesView"
+    ViewLink="project1.Cnt001389Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="TaxauthoritiesView1"
+    ViewLink="project1.Cnt001390Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

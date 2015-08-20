@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Suppliercontacts"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="SUPPLIERCONTACTS"
+  AliasName="Suppliercontacts"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Supplierid"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="SUPPLIERID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Contact"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="CONTACT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Position"
+    Precision="255"
+    ColumnName='"position"'
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Tel"
+    Precision="255"
+    ColumnName="TEL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Fax"
+    Precision="255"
+    ColumnName="FAX"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Mobile"
+    Precision="255"
+    ColumnName="MOBILE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Email"
+    Precision="255"
+    ColumnName="EMAIL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SUPPLIERCONTACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Ordercontact"
+    Precision="8"
+    Scale="0"
+    ColumnName="ORDERCONTACT"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SUPPLIERCONTACTS"/>
+  <AccessorAttribute
+    Name="Suppliers"
+    Association="project1.Cnt001379Assoc"
+    AssociationEnd="project1.Cnt001379Assoc.Suppliers"
+    AssociationOtherEnd="project1.Cnt001379Assoc.Suppliercontacts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="SuppliercontactsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SUPPLIERCONTACTS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Suppliercontacts.Supplierid"/>
+      <Item Value="project1.Suppliercontacts.Contact"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001379">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SUPPLIERS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001379"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Suppliercontacts.Supplierid"/>
+    </AttrArray>
+  </Key>
+</Entity>

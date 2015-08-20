@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Unitsofmeasure"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="UNITSOFMEASURE"
+  AliasName="Unitsofmeasure"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Unitid"
+    Precision="8"
+    Scale="0"
+    ColumnName="UNITID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="UNITSOFMEASURE"/>
+  <Attribute
+    Name="Unitname"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="UNITNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="UNITSOFMEASURE"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="UnitsofmeasurePkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="UNITSOFMEASURE_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Unitsofmeasure.Unitname"/>
+    </AttrArray>
+  </Key>
+</Entity>

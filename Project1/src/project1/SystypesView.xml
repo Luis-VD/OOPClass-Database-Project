@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SystypesView"
+  Version="11.1.2.62.76"
+  SelectList="Systypes.TYPEID, 
+       Systypes.TYPENAME, 
+       Systypes.TYPENO"
+  FromList="SYSTYPES Systypes"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Systypes"
+    Entity="project1.Systypes"/>
+  <ViewAttribute
+    Name="Typeid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Typeid"
+    EntityUsage="Systypes"
+    AliasName="TYPEID"/>
+  <ViewAttribute
+    Name="Typename"
+    PrecisionRule="true"
+    EntityAttrName="Typename"
+    EntityUsage="Systypes"
+    AliasName="TYPENAME"/>
+  <ViewAttribute
+    Name="Typeno"
+    PrecisionRule="true"
+    EntityAttrName="Typeno"
+    EntityUsage="Systypes"
+    AliasName="TYPENO"/>
+  <ViewLinkAccessor
+    Name="BanktransView"
+    ViewLink="project1.Cnt001245Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="StockmovesView"
+    ViewLink="project1.Cnt001363Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="ShipmentchargesView"
+    ViewLink="project1.Cnt001348Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="SupptransView"
+    ViewLink="project1.Cnt001376Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="GltransView"
+    ViewLink="project1.Cnt001297Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="DebtortransView"
+    ViewLink="project1.Cnt001279Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

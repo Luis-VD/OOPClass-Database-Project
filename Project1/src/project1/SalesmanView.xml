@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SalesmanView"
+  Version="11.1.2.62.76"
+  SelectList="Salesman.SALESMANCODE, 
+       Salesman.SALESMANNAME, 
+       Salesman.SMANTEL, 
+       Salesman.SMANFAX, 
+       Salesman.COMMISSIONRATE1, 
+       Salesman.BREAKPOINT, 
+       Salesman.COMMISSIONRATE2"
+  FromList="SALESMAN Salesman"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Salesman"
+    Entity="project1.Salesman"/>
+  <ViewAttribute
+    Name="Salesmancode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Salesmancode"
+    EntityUsage="Salesman"
+    AliasName="SALESMANCODE"/>
+  <ViewAttribute
+    Name="Salesmanname"
+    PrecisionRule="true"
+    EntityAttrName="Salesmanname"
+    EntityUsage="Salesman"
+    AliasName="SALESMANNAME"/>
+  <ViewAttribute
+    Name="Smantel"
+    PrecisionRule="true"
+    EntityAttrName="Smantel"
+    EntityUsage="Salesman"
+    AliasName="SMANTEL"/>
+  <ViewAttribute
+    Name="Smanfax"
+    PrecisionRule="true"
+    EntityAttrName="Smanfax"
+    EntityUsage="Salesman"
+    AliasName="SMANFAX"/>
+  <ViewAttribute
+    Name="Commissionrate1"
+    PrecisionRule="true"
+    EntityAttrName="Commissionrate1"
+    EntityUsage="Salesman"
+    AliasName="COMMISSIONRATE1"/>
+  <ViewAttribute
+    Name="Breakpoint"
+    PrecisionRule="true"
+    EntityAttrName="Breakpoint"
+    EntityUsage="Salesman"
+    AliasName="BREAKPOINT"/>
+  <ViewAttribute
+    Name="Commissionrate2"
+    PrecisionRule="true"
+    EntityAttrName="Commissionrate2"
+    EntityUsage="Salesman"
+    AliasName="COMMISSIONRATE2"/>
+  <ViewLinkAccessor
+    Name="CustbranchView"
+    ViewLink="project1.Cnt001273Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

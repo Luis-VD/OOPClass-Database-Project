@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001314Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001314Assoc">
+  <ViewLinkDefEnd
+    Name="CustbranchView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.CustbranchView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="CustbranchView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.CustbranchView.Branchcode"/>
+      <Item Value="project1.CustbranchView.Debtorno"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="OrderdeliverydifferenceslogView"
+    Cardinality="-1"
+    Owner="project1.OrderdeliverydifferenceslogView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="OrderdeliverydifferenceslogView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.OrderdeliverydifferenceslogView.Branch"/>
+      <Item Value="project1.OrderdeliverydifferenceslogView.Debtorno"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

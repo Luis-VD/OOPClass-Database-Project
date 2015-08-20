@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BomView"
+  Version="11.1.2.62.76"
+  SelectList="Bom.PARENT, 
+       Bom.COMPONENT, 
+       Bom.WORKCENTREADDED, 
+       Bom.LOCCODE, 
+       Bom.EFFECTIVEAFTER, 
+       Bom.EFFECTIVETO, 
+       Bom.QUANTITY"
+  FromList="BOM Bom"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Bom"
+    Entity="project1.Bom"/>
+  <ViewAttribute
+    Name="Parent"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Parent"
+    EntityUsage="Bom"
+    AliasName="PARENT"/>
+  <ViewAttribute
+    Name="Component1"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Component1"
+    EntityUsage="Bom"
+    AliasName="COMPONENT"/>
+  <ViewAttribute
+    Name="Workcentreadded"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Workcentreadded"
+    EntityUsage="Bom"
+    AliasName="WORKCENTREADDED"/>
+  <ViewAttribute
+    Name="Loccode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Loccode"
+    EntityUsage="Bom"
+    AliasName="LOCCODE"/>
+  <ViewAttribute
+    Name="Effectiveafter"
+    PrecisionRule="true"
+    EntityAttrName="Effectiveafter"
+    EntityUsage="Bom"
+    AliasName="EFFECTIVEAFTER"/>
+  <ViewAttribute
+    Name="Effectiveto"
+    PrecisionRule="true"
+    EntityAttrName="Effectiveto"
+    EntityUsage="Bom"
+    AliasName="EFFECTIVETO"/>
+  <ViewAttribute
+    Name="Quantity"
+    PrecisionRule="true"
+    EntityAttrName="Quantity"
+    EntityUsage="Bom"
+    AliasName="QUANTITY"/>
+</ViewObject>

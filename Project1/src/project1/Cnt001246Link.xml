@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001246Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001246Assoc">
+  <ViewLinkDefEnd
+    Name="BankaccountsView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.BankaccountsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="BankaccountsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.BankaccountsView.Accountcode"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="BanktransView"
+    Cardinality="-1"
+    Owner="project1.BanktransView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="BanktransView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.BanktransView.Bankact"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

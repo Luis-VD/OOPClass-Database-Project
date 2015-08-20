@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ShipmentchargesView"
+  Version="11.1.2.62.76"
+  SelectList="Shipmentcharges.SHIPTCHGID, 
+       Shipmentcharges.SHIPTREF, 
+       Shipmentcharges.TRANSTYPE, 
+       Shipmentcharges.TRANSNO, 
+       Shipmentcharges.STOCKID, 
+       Shipmentcharges.VALUE"
+  FromList="SHIPMENTCHARGES Shipmentcharges"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Shipmentcharges"
+    Entity="project1.Shipmentcharges"/>
+  <ViewAttribute
+    Name="Shiptchgid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Shiptchgid"
+    EntityUsage="Shipmentcharges"
+    AliasName="SHIPTCHGID"/>
+  <ViewAttribute
+    Name="Shiptref"
+    PrecisionRule="true"
+    EntityAttrName="Shiptref"
+    EntityUsage="Shipmentcharges"
+    AliasName="SHIPTREF"/>
+  <ViewAttribute
+    Name="Transtype"
+    PrecisionRule="true"
+    EntityAttrName="Transtype"
+    EntityUsage="Shipmentcharges"
+    AliasName="TRANSTYPE"/>
+  <ViewAttribute
+    Name="Transno"
+    PrecisionRule="true"
+    EntityAttrName="Transno"
+    EntityUsage="Shipmentcharges"
+    AliasName="TRANSNO"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Shipmentcharges"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Value"
+    PrecisionRule="true"
+    EntityAttrName="Value"
+    EntityUsage="Shipmentcharges"
+    AliasName="VALUE"/>
+</ViewObject>

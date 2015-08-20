@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SecuritygroupsView"
+  Version="11.1.2.62.76"
+  SelectList="Securitygroups.SECROLEID, 
+       Securitygroups.TOKENID"
+  FromList="SECURITYGROUPS Securitygroups"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Securitygroups"
+    Entity="project1.Securitygroups"/>
+  <ViewAttribute
+    Name="Secroleid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Secroleid"
+    EntityUsage="Securitygroups"
+    AliasName="SECROLEID"/>
+  <ViewAttribute
+    Name="Tokenid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Tokenid"
+    EntityUsage="Securitygroups"
+    AliasName="TOKENID"/>
+</ViewObject>

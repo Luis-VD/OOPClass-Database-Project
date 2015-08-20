@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BucketsView"
+  Version="11.1.2.62.76"
+  SelectList="Buckets.WORKCENTRE, 
+       Buckets.AVAILDATE, 
+       Buckets.CAPACITY"
+  FromList="BUCKETS Buckets"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Buckets"
+    Entity="project1.Buckets"/>
+  <ViewAttribute
+    Name="Workcentre"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Workcentre"
+    EntityUsage="Buckets"
+    AliasName="WORKCENTRE"/>
+  <ViewAttribute
+    Name="Availdate"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Availdate"
+    EntityUsage="Buckets"
+    AliasName="AVAILDATE"/>
+  <ViewAttribute
+    Name="Capacity"
+    PrecisionRule="true"
+    EntityAttrName="Capacity"
+    EntityUsage="Buckets"
+    AliasName="CAPACITY"/>
+</ViewObject>

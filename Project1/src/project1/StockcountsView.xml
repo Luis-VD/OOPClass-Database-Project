@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StockcountsView"
+  Version="11.1.2.62.76"
+  SelectList="Stockcounts.ID, 
+       Stockcounts.STOCKID, 
+       Stockcounts.LOCCODE, 
+       Stockcounts.QTYCOUNTED, 
+       Stockcounts.REFERENCE"
+  FromList="STOCKCOUNTS Stockcounts"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Stockcounts"
+    Entity="project1.Stockcounts"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Stockcounts"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Stockcounts"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Loccode"
+    PrecisionRule="true"
+    EntityAttrName="Loccode"
+    EntityUsage="Stockcounts"
+    AliasName="LOCCODE"/>
+  <ViewAttribute
+    Name="Qtycounted"
+    PrecisionRule="true"
+    EntityAttrName="Qtycounted"
+    EntityUsage="Stockcounts"
+    AliasName="QTYCOUNTED"/>
+  <ViewAttribute
+    Name="Reference"
+    PrecisionRule="true"
+    EntityAttrName="Reference"
+    EntityUsage="Stockcounts"
+    AliasName="REFERENCE"/>
+</ViewObject>

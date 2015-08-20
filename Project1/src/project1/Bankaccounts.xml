@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Bankaccounts"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="BANKACCOUNTS"
+  AliasName="Bankaccounts"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Accountcode"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="ACCOUNTCODE"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="BANKACCOUNTS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Bankaccountname"
+    Precision="255"
+    ColumnName="BANKACCOUNTNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="BANKACCOUNTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Bankaccountnumber"
+    Precision="255"
+    ColumnName="BANKACCOUNTNUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="BANKACCOUNTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Bankaddress"
+    Precision="255"
+    ColumnName="BANKADDRESS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="BANKACCOUNTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Banktrans"
+    Association="project1.Cnt001246Assoc"
+    AssociationEnd="project1.Cnt001246Assoc.Banktrans"
+    AssociationOtherEnd="project1.Cnt001246Assoc.Bankaccounts"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Chartmaster"
+    Association="project1.Cnt001243Assoc"
+    AssociationEnd="project1.Cnt001243Assoc.Chartmaster"
+    AssociationOtherEnd="project1.Cnt001243Assoc.Bankaccounts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="BankaccountsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="BANKACCOUNTS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Bankaccounts.Accountcode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001243">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CHARTMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001243"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Bankaccounts.Accountcode"/>
+    </AttrArray>
+  </Key>
+</Entity>

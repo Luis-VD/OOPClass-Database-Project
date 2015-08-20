@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Systypes"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="SYSTYPES"
+  AliasName="Systypes"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Typeid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="TYPEID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SYSTYPES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Typename"
+    Precision="255"
+    ColumnName="TYPENAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SYSTYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Typeno"
+    Precision="8"
+    Scale="0"
+    ColumnName="TYPENO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SYSTYPES"/>
+  <AccessorAttribute
+    Name="Banktrans"
+    Association="project1.Cnt001245Assoc"
+    AssociationEnd="project1.Cnt001245Assoc.Banktrans"
+    AssociationOtherEnd="project1.Cnt001245Assoc.Systypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Stockmoves"
+    Association="project1.Cnt001363Assoc"
+    AssociationEnd="project1.Cnt001363Assoc.Stockmoves"
+    AssociationOtherEnd="project1.Cnt001363Assoc.Systypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Shipmentcharges"
+    Association="project1.Cnt001348Assoc"
+    AssociationEnd="project1.Cnt001348Assoc.Shipmentcharges"
+    AssociationOtherEnd="project1.Cnt001348Assoc.Systypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Supptrans"
+    Association="project1.Cnt001376Assoc"
+    AssociationEnd="project1.Cnt001376Assoc.Supptrans"
+    AssociationOtherEnd="project1.Cnt001376Assoc.Systypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Gltrans"
+    Association="project1.Cnt001297Assoc"
+    AssociationEnd="project1.Cnt001297Assoc.Gltrans"
+    AssociationOtherEnd="project1.Cnt001297Assoc.Systypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Debtortrans"
+    Association="project1.Cnt001279Assoc"
+    AssociationEnd="project1.Cnt001279Assoc.Debtortrans"
+    AssociationOtherEnd="project1.Cnt001279Assoc.Systypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="SystypesPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYSTYPES_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Systypes.Typeid"/>
+    </AttrArray>
+  </Key>
+</Entity>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StockserialitemsView"
+  Version="11.1.2.62.76"
+  SelectList="Stockserialitems.STOCKID, 
+       Stockserialitems.LOCCODE, 
+       Stockserialitems.SERIALNO, 
+       Stockserialitems.QUANTITY"
+  FromList="STOCKSERIALITEMS Stockserialitems"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Stockserialitems"
+    Entity="project1.Stockserialitems"/>
+  <ViewAttribute
+    Name="Stockid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Stockserialitems"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Loccode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Loccode"
+    EntityUsage="Stockserialitems"
+    AliasName="LOCCODE"/>
+  <ViewAttribute
+    Name="Serialno"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Serialno"
+    EntityUsage="Stockserialitems"
+    AliasName="SERIALNO"/>
+  <ViewAttribute
+    Name="Quantity"
+    PrecisionRule="true"
+    EntityAttrName="Quantity"
+    EntityUsage="Stockserialitems"
+    AliasName="QUANTITY"/>
+</ViewObject>

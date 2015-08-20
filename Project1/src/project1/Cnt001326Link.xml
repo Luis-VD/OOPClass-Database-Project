@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001326Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001326Assoc">
+  <ViewLinkDefEnd
+    Name="PurchordersView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.PurchordersView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="PurchordersView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.PurchordersView.Orderno"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="PurchorderdetailsView"
+    Cardinality="-1"
+    Owner="project1.PurchorderdetailsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="PurchorderdetailsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.PurchorderdetailsView.Orderno"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

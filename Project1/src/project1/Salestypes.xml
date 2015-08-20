@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Salestypes"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="SALESTYPES"
+  AliasName="Salestypes"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Typeabbrev"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="TYPEABBREV"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SALESTYPES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SalesType"
+    Precision="255"
+    ColumnName="SALES_TYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SALESTYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Prices"
+    Association="project1.Cnt001321Assoc"
+    AssociationEnd="project1.Cnt001321Assoc.Prices"
+    AssociationOtherEnd="project1.Cnt001321Assoc.Salestypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Contracts"
+    Association="project1.Cnt001265Assoc"
+    AssociationEnd="project1.Cnt001265Assoc.Contracts"
+    AssociationOtherEnd="project1.Cnt001265Assoc.Salestypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Discountmatrix"
+    Association="project1.Cnt001287Assoc"
+    AssociationEnd="project1.Cnt001287Assoc.Discountmatrix"
+    AssociationOtherEnd="project1.Cnt001287Assoc.Salestypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Debtorsmaster"
+    Association="project1.Cnt001285Assoc"
+    AssociationEnd="project1.Cnt001285Assoc.Debtorsmaster"
+    AssociationOtherEnd="project1.Cnt001285Assoc.Salestypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="SalestypesPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SALESTYPES_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Salestypes.Typeabbrev"/>
+    </AttrArray>
+  </Key>
+</Entity>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SalescatView"
+  Version="11.1.2.62.76"
+  SelectList="Salescat.SALESCATID, 
+       Salescat.PARENTCATID, 
+       Salescat.SALESCATNAME"
+  FromList="SALESCAT Salescat"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Salescat"
+    Entity="project1.Salescat"/>
+  <ViewAttribute
+    Name="Salescatid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Salescatid"
+    EntityUsage="Salescat"
+    AliasName="SALESCATID"/>
+  <ViewAttribute
+    Name="Parentcatid"
+    PrecisionRule="true"
+    EntityAttrName="Parentcatid"
+    EntityUsage="Salescat"
+    AliasName="PARENTCATID"/>
+  <ViewAttribute
+    Name="Salescatname"
+    PrecisionRule="true"
+    EntityAttrName="Salescatname"
+    EntityUsage="Salescat"
+    AliasName="SALESCATNAME"/>
+</ViewObject>

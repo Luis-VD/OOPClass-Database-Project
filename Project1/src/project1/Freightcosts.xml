@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Freightcosts"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="FREIGHTCOSTS"
+  AliasName="Freightcosts"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Shipcostfromid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="SHIPCOSTFROMID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Locationfrom"
+    Precision="255"
+    ColumnName="LOCATIONFROM"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="FREIGHTCOSTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Destination"
+    Precision="255"
+    ColumnName="DESTINATION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="FREIGHTCOSTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Shipperid"
+    Precision="8"
+    Scale="0"
+    ColumnName="SHIPPERID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <Attribute
+    Name="Cubrate"
+    Precision="16"
+    Scale="2"
+    ColumnName="CUBRATE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <Attribute
+    Name="Kgrate"
+    Precision="16"
+    Scale="2"
+    ColumnName="KGRATE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <Attribute
+    Name="Maxkgs"
+    Precision="16"
+    Scale="2"
+    ColumnName="MAXKGS"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <Attribute
+    Name="Maxcub"
+    Precision="16"
+    Scale="2"
+    ColumnName="MAXCUB"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <Attribute
+    Name="Fixedprice"
+    Precision="16"
+    Scale="2"
+    ColumnName="FIXEDPRICE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <Attribute
+    Name="Minimumchg"
+    Precision="16"
+    Scale="2"
+    ColumnName="MINIMUMCHG"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="FREIGHTCOSTS"/>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001293Assoc"
+    AssociationEnd="project1.Cnt001293Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001293Assoc.Freightcosts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Shippers"
+    Association="project1.Cnt001294Assoc"
+    AssociationEnd="project1.Cnt001294Assoc.Shippers"
+    AssociationOtherEnd="project1.Cnt001294Assoc.Freightcosts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="FreightcostsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="FREIGHTCOSTS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Freightcosts.Shipcostfromid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001293">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001293"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Freightcosts.Locationfrom"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001294">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SHIPPERS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001294"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Freightcosts.Shipperid"/>
+    </AttrArray>
+  </Key>
+</Entity>

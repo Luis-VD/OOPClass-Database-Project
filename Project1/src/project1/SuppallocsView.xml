@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SuppallocsView"
+  Version="11.1.2.62.76"
+  SelectList="Suppallocs.ID, 
+       Suppallocs.AMT, 
+       Suppallocs.DATEALLOC, 
+       Suppallocs.TRANSID_ALLOCFROM, 
+       Suppallocs.TRANSID_ALLOCTO"
+  FromList="SUPPALLOCS Suppallocs"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Suppallocs"
+    Entity="project1.Suppallocs"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Suppallocs"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Amt"
+    PrecisionRule="true"
+    EntityAttrName="Amt"
+    EntityUsage="Suppallocs"
+    AliasName="AMT"/>
+  <ViewAttribute
+    Name="Datealloc"
+    PrecisionRule="true"
+    EntityAttrName="Datealloc"
+    EntityUsage="Suppallocs"
+    AliasName="DATEALLOC"/>
+  <ViewAttribute
+    Name="TransidAllocfrom"
+    PrecisionRule="true"
+    EntityAttrName="TransidAllocfrom"
+    EntityUsage="Suppallocs"
+    AliasName="TRANSID_ALLOCFROM"/>
+  <ViewAttribute
+    Name="TransidAllocto"
+    PrecisionRule="true"
+    EntityAttrName="TransidAllocto"
+    EntityUsage="Suppallocs"
+    AliasName="TRANSID_ALLOCTO"/>
+</ViewObject>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Config"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="CONFIG"
+  AliasName="Config"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Confname"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="CONFNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONFIG"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Confvalue"
+    Precision="255"
+    ColumnName="CONFVALUE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONFIG">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="ConfigPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CONFIG_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Config.Confname"/>
+    </AttrArray>
+  </Key>
+</Entity>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CogsglpostingsView"
+  Version="11.1.2.62.76"
+  SelectList="Cogsglpostings.ID, 
+       Cogsglpostings.AREA, 
+       Cogsglpostings.STKCAT, 
+       Cogsglpostings.GLCODE, 
+       Cogsglpostings.SALESTYPE"
+  FromList="COGSGLPOSTINGS Cogsglpostings"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Cogsglpostings"
+    Entity="project1.Cogsglpostings"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Cogsglpostings"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Area"
+    PrecisionRule="true"
+    EntityAttrName="Area"
+    EntityUsage="Cogsglpostings"
+    AliasName="AREA"/>
+  <ViewAttribute
+    Name="Stkcat"
+    PrecisionRule="true"
+    EntityAttrName="Stkcat"
+    EntityUsage="Cogsglpostings"
+    AliasName="STKCAT"/>
+  <ViewAttribute
+    Name="Glcode"
+    PrecisionRule="true"
+    EntityAttrName="Glcode"
+    EntityUsage="Cogsglpostings"
+    AliasName="GLCODE"/>
+  <ViewAttribute
+    Name="Salestype"
+    PrecisionRule="true"
+    EntityAttrName="Salestype"
+    EntityUsage="Cogsglpostings"
+    AliasName="SALESTYPE"/>
+</ViewObject>

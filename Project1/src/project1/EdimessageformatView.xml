@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EdimessageformatView"
+  Version="11.1.2.62.76"
+  SelectList="Edimessageformat.ID, 
+       Edimessageformat.PARTNERCODE, 
+       Edimessageformat.MESSAGETYPE, 
+       Edimessageformat.SECTION, 
+       Edimessageformat.SEQUENCENO, 
+       Edimessageformat.LINETEXT"
+  FromList="EDIMESSAGEFORMAT Edimessageformat"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Edimessageformat"
+    Entity="project1.Edimessageformat"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Edimessageformat"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Partnercode"
+    PrecisionRule="true"
+    EntityAttrName="Partnercode"
+    EntityUsage="Edimessageformat"
+    AliasName="PARTNERCODE"/>
+  <ViewAttribute
+    Name="Messagetype"
+    PrecisionRule="true"
+    EntityAttrName="Messagetype"
+    EntityUsage="Edimessageformat"
+    AliasName="MESSAGETYPE"/>
+  <ViewAttribute
+    Name="Section"
+    PrecisionRule="true"
+    EntityAttrName="Section"
+    EntityUsage="Edimessageformat"
+    AliasName="SECTION"/>
+  <ViewAttribute
+    Name="Sequenceno"
+    PrecisionRule="true"
+    EntityAttrName="Sequenceno"
+    EntityUsage="Edimessageformat"
+    AliasName="SEQUENCENO"/>
+  <ViewAttribute
+    Name="Linetext"
+    PrecisionRule="true"
+    EntityAttrName="Linetext"
+    EntityUsage="Edimessageformat"
+    AliasName="LINETEXT"/>
+</ViewObject>

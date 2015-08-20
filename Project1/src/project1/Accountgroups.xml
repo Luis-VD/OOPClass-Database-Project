@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Accountgroups"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="ACCOUNTGROUPS"
+  AliasName="Accountgroups"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Groupname"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="GROUPNAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="ACCOUNTGROUPS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Sectioninaccounts"
+    Precision="8"
+    Scale="0"
+    ColumnName="SECTIONINACCOUNTS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="ACCOUNTGROUPS"/>
+  <Attribute
+    Name="Pandl"
+    Precision="8"
+    Scale="0"
+    ColumnName="PANDL"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="ACCOUNTGROUPS"/>
+  <Attribute
+    Name="Sequenceintb"
+    Precision="8"
+    Scale="0"
+    ColumnName="SEQUENCEINTB"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="ACCOUNTGROUPS"/>
+  <AccessorAttribute
+    Name="Accountsection"
+    Association="project1.J1Assoc"
+    AssociationEnd="project1.J1Assoc.Accountsection"
+    AssociationOtherEnd="project1.J1Assoc.Accountgroups"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Chartmaster"
+    Association="project1.Cnt001254Assoc"
+    AssociationEnd="project1.Cnt001254Assoc.Chartmaster"
+    AssociationOtherEnd="project1.Cnt001254Assoc.Accountgroups"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="AccountgroupsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="ACCOUNTGROUPS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Accountgroups.Groupname"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="J1">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="ACCOUNTSECTION_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="$1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Accountgroups.Sectioninaccounts"/>
+    </AttrArray>
+  </Key>
+</Entity>

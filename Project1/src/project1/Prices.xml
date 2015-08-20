@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Prices"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="PRICES"
+  AliasName="Prices"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Stockid"
+    Precision="255"
+    ColumnName="STOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Typeabbrev"
+    Precision="255"
+    ColumnName="TYPEABBREV"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Currabrev"
+    Precision="255"
+    ColumnName="CURRABREV"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Debtorno"
+    Precision="255"
+    ColumnName="DEBTORNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Price"
+    Precision="20"
+    Scale="4"
+    ColumnName="PRICE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="PRICES"/>
+  <Attribute
+    Name="Branchcode"
+    Precision="255"
+    ColumnName="BRANCHCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PRICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Rowid"
+    IsUpdateable="false"
+    ColumnName="ROWID"
+    SQLType="ROWID"
+    Type="oracle.jbo.domain.RowID"
+    ColumnType="ROWID"
+    TableName="PRICES"
+    PrimaryKey="true"/>
+  <AccessorAttribute
+    Name="Currencies"
+    Association="project1.Cnt001320Assoc"
+    AssociationEnd="project1.Cnt001320Assoc.Currencies"
+    AssociationOtherEnd="project1.Cnt001320Assoc.Prices"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Salestypes"
+    Association="project1.Cnt001321Assoc"
+    AssociationEnd="project1.Cnt001321Assoc.Salestypes"
+    AssociationOtherEnd="project1.Cnt001321Assoc.Prices"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Stockmaster"
+    Association="project1.Cnt001319Assoc"
+    AssociationEnd="project1.Cnt001319Assoc.Stockmaster"
+    AssociationOtherEnd="project1.Cnt001319Assoc.Prices"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="Cnt001319">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001319"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Prices.Stockid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001320">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CURRENCIES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001320"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Prices.Currabrev"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001321">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SALESTYPES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001321"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Prices.Typeabbrev"/>
+    </AttrArray>
+  </Key>
+</Entity>

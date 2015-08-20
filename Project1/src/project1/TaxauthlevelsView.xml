@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="TaxauthlevelsView"
+  Version="11.1.2.62.76"
+  SelectList='Taxauthlevels.TAXAUTHORITY, 
+       Taxauthlevels.DISPATCHTAXAUTHORITY, 
+       Taxauthlevels."level", 
+       Taxauthlevels.TAXRATE'
+  FromList="TAXAUTHLEVELS Taxauthlevels"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Taxauthlevels"
+    Entity="project1.Taxauthlevels"/>
+  <ViewAttribute
+    Name="Taxauthority"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Taxauthority"
+    EntityUsage="Taxauthlevels"
+    AliasName="TAXAUTHORITY"/>
+  <ViewAttribute
+    Name="Dispatchtaxauthority"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Dispatchtaxauthority"
+    EntityUsage="Taxauthlevels"
+    AliasName="DISPATCHTAXAUTHORITY"/>
+  <ViewAttribute
+    Name="Level"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Level"
+    EntityUsage="Taxauthlevels"
+    AliasName='"level"'/>
+  <ViewAttribute
+    Name="Taxrate"
+    PrecisionRule="true"
+    EntityAttrName="Taxrate"
+    EntityUsage="Taxauthlevels"
+    AliasName="TAXRATE"/>
+</ViewObject>

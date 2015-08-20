@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SalestypesView"
+  Version="11.1.2.62.76"
+  SelectList="Salestypes.TYPEABBREV, 
+       Salestypes.SALES_TYPE"
+  FromList="SALESTYPES Salestypes"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Salestypes"
+    Entity="project1.Salestypes"/>
+  <ViewAttribute
+    Name="Typeabbrev"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Typeabbrev"
+    EntityUsage="Salestypes"
+    AliasName="TYPEABBREV"/>
+  <ViewAttribute
+    Name="SalesType"
+    PrecisionRule="true"
+    EntityAttrName="SalesType"
+    EntityUsage="Salestypes"
+    AliasName="SALES_TYPE"/>
+  <ViewLinkAccessor
+    Name="PricesView"
+    ViewLink="project1.Cnt001321Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="ContractsView"
+    ViewLink="project1.Cnt001265Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="DiscountmatrixView"
+    ViewLink="project1.Cnt001287Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="DebtorsmasterView"
+    ViewLink="project1.Cnt001285Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

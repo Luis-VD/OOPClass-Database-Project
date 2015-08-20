@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001283Assoc"
+  Version="11.1.2.62.76">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="Currencies"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.Currencies">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="Currencies"/>
+      <Attr Name="_foreignKey" Value="project1.Currencies.CurrenciesPkey"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Currencies.Currabrev"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="Debtorsmaster"
+    Cardinality="-1"
+    Owner="project1.Debtorsmaster">
+    <DesignTime>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="Debtorsmaster"/>
+      <Attr Name="_foreignKey" Value="project1.Debtorsmaster.Cnt001283"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Debtorsmaster.Currcode"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

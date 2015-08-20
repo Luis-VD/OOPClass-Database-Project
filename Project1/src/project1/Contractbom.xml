@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Contractbom"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="CONTRACTBOM"
+  AliasName="Contractbom"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Contractref"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="CONTRACTREF"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTBOM"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Component1"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="COMPONENT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTBOM"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Workcentreadded"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="WORKCENTREADDED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTBOM"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Loccode"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="LOCCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTBOM"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Quantity"
+    Precision="16"
+    Scale="4"
+    ColumnName="QUANTITY"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="CONTRACTBOM"/>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001258Assoc"
+    AssociationEnd="project1.Cnt001258Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001258Assoc.Contractbom"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Stockmaster"
+    Association="project1.Cnt001259Assoc"
+    AssociationEnd="project1.Cnt001259Assoc.Stockmaster"
+    AssociationOtherEnd="project1.Cnt001259Assoc.Contractbom"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Workcentres"
+    Association="project1.Cnt001257Assoc"
+    AssociationEnd="project1.Cnt001257Assoc.Workcentres"
+    AssociationOtherEnd="project1.Cnt001257Assoc.Contractbom"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="ContractbomPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CONTRACTBOM_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contractbom.Contractref"/>
+      <Item Value="project1.Contractbom.Component1"/>
+      <Item Value="project1.Contractbom.Workcentreadded"/>
+      <Item Value="project1.Contractbom.Loccode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001257">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="WORKCENTRES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001257"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contractbom.Workcentreadded"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001258">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001258"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contractbom.Loccode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001259">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001259"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contractbom.Component1"/>
+    </AttrArray>
+  </Key>
+</Entity>

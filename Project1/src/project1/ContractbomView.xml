@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ContractbomView"
+  Version="11.1.2.62.76"
+  SelectList="Contractbom.CONTRACTREF, 
+       Contractbom.COMPONENT, 
+       Contractbom.WORKCENTREADDED, 
+       Contractbom.LOCCODE, 
+       Contractbom.QUANTITY"
+  FromList="CONTRACTBOM Contractbom"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Contractbom"
+    Entity="project1.Contractbom"/>
+  <ViewAttribute
+    Name="Contractref"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Contractref"
+    EntityUsage="Contractbom"
+    AliasName="CONTRACTREF"/>
+  <ViewAttribute
+    Name="Component1"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Component1"
+    EntityUsage="Contractbom"
+    AliasName="COMPONENT"/>
+  <ViewAttribute
+    Name="Workcentreadded"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Workcentreadded"
+    EntityUsage="Contractbom"
+    AliasName="WORKCENTREADDED"/>
+  <ViewAttribute
+    Name="Loccode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Loccode"
+    EntityUsage="Contractbom"
+    AliasName="LOCCODE"/>
+  <ViewAttribute
+    Name="Quantity"
+    PrecisionRule="true"
+    EntityAttrName="Quantity"
+    EntityUsage="Contractbom"
+    AliasName="QUANTITY"/>
+</ViewObject>

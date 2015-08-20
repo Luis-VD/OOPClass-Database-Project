@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ChartdetailsView"
+  Version="11.1.2.62.76"
+  SelectList="Chartdetails.ACCOUNTCODE, 
+       Chartdetails.PERIOD, 
+       Chartdetails.BUDGET, 
+       Chartdetails.ACTUAL, 
+       Chartdetails.BFWD, 
+       Chartdetails.BFWDBUDGET"
+  FromList="CHARTDETAILS Chartdetails"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Chartdetails"
+    Entity="project1.Chartdetails"/>
+  <ViewAttribute
+    Name="Accountcode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Accountcode"
+    EntityUsage="Chartdetails"
+    AliasName="ACCOUNTCODE"/>
+  <ViewAttribute
+    Name="Period"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Period"
+    EntityUsage="Chartdetails"
+    AliasName="PERIOD"/>
+  <ViewAttribute
+    Name="Budget"
+    PrecisionRule="true"
+    EntityAttrName="Budget"
+    EntityUsage="Chartdetails"
+    AliasName="BUDGET"/>
+  <ViewAttribute
+    Name="Actual"
+    PrecisionRule="true"
+    EntityAttrName="Actual"
+    EntityUsage="Chartdetails"
+    AliasName="ACTUAL"/>
+  <ViewAttribute
+    Name="Bfwd"
+    PrecisionRule="true"
+    EntityAttrName="Bfwd"
+    EntityUsage="Chartdetails"
+    AliasName="BFWD"/>
+  <ViewAttribute
+    Name="Bfwdbudget"
+    PrecisionRule="true"
+    EntityAttrName="Bfwdbudget"
+    EntityUsage="Chartdetails"
+    AliasName="BFWDBUDGET"/>
+</ViewObject>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AccountsectionView"
+  Version="11.1.2.62.76"
+  SelectList="Accountsection.SECTIONID, 
+       Accountsection.SECTIONNAME"
+  FromList="ACCOUNTSECTION Accountsection"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Accountsection"
+    Entity="project1.Accountsection"/>
+  <ViewAttribute
+    Name="Sectionid"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Sectionid"
+    EntityUsage="Accountsection"
+    AliasName="SECTIONID"/>
+  <ViewAttribute
+    Name="Sectionname"
+    PrecisionRule="true"
+    EntityAttrName="Sectionname"
+    EntityUsage="Accountsection"
+    AliasName="SECTIONNAME"/>
+  <ViewLinkAccessor
+    Name="AccountgroupsView"
+    ViewLink="project1.J1Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

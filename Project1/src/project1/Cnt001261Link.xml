@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Cnt001261Link"
+  Version="11.1.2.62.76"
+  EntityAssociation="project1.Cnt001261Assoc">
+  <ViewLinkDefEnd
+    Name="ContractsView"
+    Cardinality="1"
+    Source="true"
+    Owner="project1.ContractsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="ContractsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.ContractsView.Contractref"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="ContractreqtsView"
+    Cardinality="-1"
+    Owner="project1.ContractreqtsView">
+    <DesignTime>
+      <Attr Name="_finderName" Value="ContractreqtsView"/>
+      <Attr Name="_isUpdateable" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.ContractreqtsView.Contract"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

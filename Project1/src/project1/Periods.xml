@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Periods"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="PERIODS"
+  AliasName="Periods"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Periodno"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="PERIODNO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PERIODS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="LastdateInPeriod"
+    Precision="20"
+    ColumnName="LASTDATE_IN_PERIOD"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PERIODS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Gltrans"
+    Association="project1.Cnt001298Assoc"
+    AssociationEnd="project1.Cnt001298Assoc.Gltrans"
+    AssociationOtherEnd="project1.Cnt001298Assoc.Periods"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Debtortrans"
+    Association="project1.Cnt001280Assoc"
+    AssociationEnd="project1.Cnt001280Assoc.Debtortrans"
+    AssociationOtherEnd="project1.Cnt001280Assoc.Periods"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Chartdetails"
+    Association="project1.Cnt001252Assoc"
+    AssociationEnd="project1.Cnt001252Assoc.Chartdetails"
+    AssociationOtherEnd="project1.Cnt001252Assoc.Periods"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Salesanalysis"
+    Association="project1.Cnt001334Assoc"
+    AssociationEnd="project1.Cnt001334Assoc.Salesanalysis"
+    AssociationOtherEnd="project1.Cnt001334Assoc.Periods"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Stockmoves"
+    Association="project1.Cnt001365Assoc"
+    AssociationEnd="project1.Cnt001365Assoc.Stockmoves"
+    AssociationOtherEnd="project1.Cnt001365Assoc.Periods"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="PeriodsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PERIODS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Periods.Periodno"/>
+    </AttrArray>
+  </Key>
+</Entity>

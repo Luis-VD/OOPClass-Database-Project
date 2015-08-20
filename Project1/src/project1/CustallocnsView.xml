@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="CustallocnsView"
+  Version="11.1.2.62.76"
+  SelectList="Custallocns.ID, 
+       Custallocns.AMT, 
+       Custallocns.DATEALLOC, 
+       Custallocns.TRANSID_ALLOCFROM, 
+       Custallocns.TRANSID_ALLOCTO"
+  FromList="CUSTALLOCNS Custallocns"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Custallocns"
+    Entity="project1.Custallocns"/>
+  <ViewAttribute
+    Name="Id"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Id"
+    EntityUsage="Custallocns"
+    AliasName="ID"/>
+  <ViewAttribute
+    Name="Amt"
+    PrecisionRule="true"
+    EntityAttrName="Amt"
+    EntityUsage="Custallocns"
+    AliasName="AMT"/>
+  <ViewAttribute
+    Name="Datealloc"
+    PrecisionRule="true"
+    EntityAttrName="Datealloc"
+    EntityUsage="Custallocns"
+    AliasName="DATEALLOC"/>
+  <ViewAttribute
+    Name="TransidAllocfrom"
+    PrecisionRule="true"
+    EntityAttrName="TransidAllocfrom"
+    EntityUsage="Custallocns"
+    AliasName="TRANSID_ALLOCFROM"/>
+  <ViewAttribute
+    Name="TransidAllocto"
+    PrecisionRule="true"
+    EntityAttrName="TransidAllocto"
+    EntityUsage="Custallocns"
+    AliasName="TRANSID_ALLOCTO"/>
+</ViewObject>

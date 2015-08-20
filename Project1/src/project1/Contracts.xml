@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Contracts"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="CONTRACTS"
+  AliasName="Contracts"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Contractref"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="CONTRACTREF"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Contractdescription"
+    Precision="255"
+    ColumnName="CONTRACTDESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Debtorno"
+    Precision="255"
+    ColumnName="DEBTORNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Branchcode"
+    Precision="255"
+    ColumnName="BRANCHCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Status"
+    Precision="255"
+    ColumnName="STATUS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Categoryid"
+    Precision="255"
+    ColumnName="CATEGORYID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Typeabbrev"
+    Precision="255"
+    ColumnName="TYPEABBREV"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Orderno"
+    Precision="8"
+    Scale="0"
+    ColumnName="ORDERNO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="CONTRACTS"/>
+  <Attribute
+    Name="Quotedpricefx"
+    Precision="20"
+    Scale="4"
+    ColumnName="QUOTEDPRICEFX"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="CONTRACTS"/>
+  <Attribute
+    Name="Margin"
+    Precision="16"
+    Scale="4"
+    ColumnName="MARGIN"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="CONTRACTS"/>
+  <Attribute
+    Name="Woref"
+    Precision="255"
+    ColumnName="WOREF"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Requireddate"
+    Precision="30"
+    ColumnName="REQUIREDDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Canceldate"
+    Precision="30"
+    ColumnName="CANCELDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Quantityreqd"
+    Precision="16"
+    Scale="4"
+    ColumnName="QUANTITYREQD"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="CONTRACTS"/>
+  <Attribute
+    Name="Specifications"
+    Precision="500"
+    ColumnName="SPECIFICATIONS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="500"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Datequoted"
+    Precision="30"
+    ColumnName="DATEQUOTED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Units"
+    Precision="255"
+    ColumnName="UNITS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Drawing"
+    Precision="500"
+    ColumnName="DRAWING"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="CONTRACTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="500"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Rate"
+    Precision="16"
+    Scale="4"
+    ColumnName="RATE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="CONTRACTS"/>
+  <AccessorAttribute
+    Name="Contractreqts"
+    Association="project1.Cnt001261Assoc"
+    AssociationEnd="project1.Cnt001261Assoc.Contractreqts"
+    AssociationOtherEnd="project1.Cnt001261Assoc.Contracts"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Custbranch"
+    Association="project1.Cnt001263Assoc"
+    AssociationEnd="project1.Cnt001263Assoc.Custbranch"
+    AssociationOtherEnd="project1.Cnt001263Assoc.Contracts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Salestypes"
+    Association="project1.Cnt001265Assoc"
+    AssociationEnd="project1.Cnt001265Assoc.Salestypes"
+    AssociationOtherEnd="project1.Cnt001265Assoc.Contracts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Stockcategory"
+    Association="project1.Cnt001264Assoc"
+    AssociationEnd="project1.Cnt001264Assoc.Stockcategory"
+    AssociationOtherEnd="project1.Cnt001264Assoc.Contracts"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="ContractsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CONTRACTS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contracts.Contractref"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001263">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="CUSTBRANCH_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001263"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contracts.Branchcode"/>
+      <Item Value="project1.Contracts.Debtorno"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001264">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKCATEGORY_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001264"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contracts.Categoryid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001265">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SALESTYPES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001265"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Contracts.Typeabbrev"/>
+    </AttrArray>
+  </Key>
+</Entity>

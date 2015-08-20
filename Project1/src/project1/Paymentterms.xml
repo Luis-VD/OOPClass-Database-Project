@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Paymentterms"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="PAYMENTTERMS"
+  AliasName="Paymentterms"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Termsindicator"
+    IsNotNull="true"
+    Precision="255"
+    ColumnName="TERMSINDICATOR"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PAYMENTTERMS"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Terms"
+    Precision="255"
+    ColumnName="TERMS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="PAYMENTTERMS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Daysbeforedue"
+    Precision="8"
+    Scale="0"
+    ColumnName="DAYSBEFOREDUE"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PAYMENTTERMS"/>
+  <Attribute
+    Name="Dayinfollowingmonth"
+    Precision="8"
+    Scale="0"
+    ColumnName="DAYINFOLLOWINGMONTH"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="PAYMENTTERMS"/>
+  <AccessorAttribute
+    Name="Debtorsmaster"
+    Association="project1.Cnt001284Assoc"
+    AssociationEnd="project1.Cnt001284Assoc.Debtorsmaster"
+    AssociationOtherEnd="project1.Cnt001284Assoc.Paymentterms1"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Suppliers"
+    Association="project1.Cnt001382Assoc"
+    AssociationEnd="project1.Cnt001382Assoc.Suppliers"
+    AssociationOtherEnd="project1.Cnt001382Assoc.Paymentterms1"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="PaymenttermsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PAYMENTTERMS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Paymentterms.Termsindicator"/>
+    </AttrArray>
+  </Key>
+</Entity>

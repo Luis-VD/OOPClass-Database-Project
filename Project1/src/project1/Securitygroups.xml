@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Securitygroups"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="SECURITYGROUPS"
+  AliasName="Securitygroups"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Secroleid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="SECROLEID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SECURITYGROUPS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Tokenid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="TOKENID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SECURITYGROUPS"
+    PrimaryKey="true"/>
+  <AccessorAttribute
+    Name="Securityroles"
+    Association="project1.SecuritygroupsSecgroupidFkAssoc"
+    AssociationEnd="project1.SecuritygroupsSecgroupidFkAssoc.Securityroles"
+    AssociationOtherEnd="project1.SecuritygroupsSecgroupidFkAssoc.Securitygroups"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Securitytokens"
+    Association="project1.SecuritygroupsTokenidFkAssoc"
+    AssociationEnd="project1.SecuritygroupsTokenidFkAssoc.Securitytokens"
+    AssociationOtherEnd="project1.SecuritygroupsTokenidFkAssoc.Securitygroups"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="SecuritygroupsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SECURITYGROUPS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Securitygroups.Secroleid"/>
+      <Item Value="project1.Securitygroups.Tokenid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SecuritygroupsSecgroupidFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SECURITYHEADINGS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="SECURITYGROUPS_SECGROUPID_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Securitygroups.Secroleid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SecuritygroupsTokenidFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SECURITYTOKENS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="SECURITYGROUPS_TOKENID_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Securitygroups.Tokenid"/>
+    </AttrArray>
+  </Key>
+</Entity>

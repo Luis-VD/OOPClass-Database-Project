@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StockserialmovesView"
+  Version="11.1.2.62.76"
+  SelectList="Stockserialmoves.STKITMMOVENO, 
+       Stockserialmoves.STOCKMOVENO, 
+       Stockserialmoves.STOCKID, 
+       Stockserialmoves.SERIALNO, 
+       Stockserialmoves.MOVEQTY"
+  FromList="STOCKSERIALMOVES Stockserialmoves"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Stockserialmoves"
+    Entity="project1.Stockserialmoves"/>
+  <ViewAttribute
+    Name="Stkitmmoveno"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Stkitmmoveno"
+    EntityUsage="Stockserialmoves"
+    AliasName="STKITMMOVENO"/>
+  <ViewAttribute
+    Name="Stockmoveno"
+    PrecisionRule="true"
+    EntityAttrName="Stockmoveno"
+    EntityUsage="Stockserialmoves"
+    AliasName="STOCKMOVENO"/>
+  <ViewAttribute
+    Name="Stockid"
+    PrecisionRule="true"
+    EntityAttrName="Stockid"
+    EntityUsage="Stockserialmoves"
+    AliasName="STOCKID"/>
+  <ViewAttribute
+    Name="Serialno"
+    PrecisionRule="true"
+    EntityAttrName="Serialno"
+    EntityUsage="Stockserialmoves"
+    AliasName="SERIALNO"/>
+  <ViewAttribute
+    Name="Moveqty"
+    PrecisionRule="true"
+    EntityAttrName="Moveqty"
+    EntityUsage="Stockserialmoves"
+    AliasName="MOVEQTY"/>
+</ViewObject>

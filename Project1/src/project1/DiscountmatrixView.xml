@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DiscountmatrixView"
+  Version="11.1.2.62.76"
+  SelectList="Discountmatrix.SALESTYPE, 
+       Discountmatrix.DISCOUNTCATEGORY, 
+       Discountmatrix.QUANTITYBREAK, 
+       Discountmatrix.DISCOUNTRATE"
+  FromList="DISCOUNTMATRIX Discountmatrix"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Discountmatrix"
+    Entity="project1.Discountmatrix"/>
+  <ViewAttribute
+    Name="Salestype"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Salestype"
+    EntityUsage="Discountmatrix"
+    AliasName="SALESTYPE"/>
+  <ViewAttribute
+    Name="Discountcategory"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Discountcategory"
+    EntityUsage="Discountmatrix"
+    AliasName="DISCOUNTCATEGORY"/>
+  <ViewAttribute
+    Name="Quantitybreak"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Quantitybreak"
+    EntityUsage="Discountmatrix"
+    AliasName="QUANTITYBREAK"/>
+  <ViewAttribute
+    Name="Discountrate"
+    PrecisionRule="true"
+    EntityAttrName="Discountrate"
+    EntityUsage="Discountmatrix"
+    AliasName="DISCOUNTRATE"/>
+</ViewObject>

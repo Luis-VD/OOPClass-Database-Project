@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Stockmoves"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="STOCKMOVES"
+  AliasName="Stockmoves"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Stkmoveno"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="STKMOVENO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Stockid"
+    Precision="255"
+    ColumnName="STOCKID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Type"
+    Precision="8"
+    Scale="0"
+    ColumnName='"type"'
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Transno"
+    Precision="8"
+    Scale="0"
+    ColumnName="TRANSNO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Loccode"
+    Precision="255"
+    ColumnName="LOCCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Trandate"
+    Precision="20"
+    ColumnName="TRANDATE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Debtorno"
+    Precision="255"
+    ColumnName="DEBTORNO"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Branchcode"
+    Precision="255"
+    ColumnName="BRANCHCODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Price"
+    Precision="20"
+    Scale="4"
+    ColumnName="PRICE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Prd"
+    Precision="8"
+    Scale="0"
+    ColumnName="PRD"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Reference"
+    Precision="255"
+    ColumnName="REFERENCE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Qty"
+    Precision="16"
+    Scale="4"
+    ColumnName="QTY"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Discountpercent"
+    Precision="16"
+    Scale="4"
+    ColumnName="DISCOUNTPERCENT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Standardcost"
+    Precision="16"
+    Scale="4"
+    ColumnName="STANDARDCOST"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="ShowOnInvCrds"
+    Precision="8"
+    Scale="0"
+    ColumnName="SHOW_ON_INV_CRDS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Newqoh"
+    Precision="10"
+    Scale="2"
+    ColumnName="NEWQOH"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Hidemovt"
+    Precision="8"
+    Scale="0"
+    ColumnName="HIDEMOVT"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Taxrate"
+    Precision="10"
+    Scale="2"
+    ColumnName="TAXRATE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="STOCKMOVES"/>
+  <Attribute
+    Name="Narrative"
+    Precision="255"
+    ColumnName="NARRATIVE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="STOCKMOVES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="Stockmaster"
+    Association="project1.Cnt001362Assoc"
+    AssociationEnd="project1.Cnt001362Assoc.Stockmaster"
+    AssociationOtherEnd="project1.Cnt001362Assoc.Stockmoves"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Locations"
+    Association="project1.Cnt001364Assoc"
+    AssociationEnd="project1.Cnt001364Assoc.Locations"
+    AssociationOtherEnd="project1.Cnt001364Assoc.Stockmoves"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Periods"
+    Association="project1.Cnt001365Assoc"
+    AssociationEnd="project1.Cnt001365Assoc.Periods"
+    AssociationOtherEnd="project1.Cnt001365Assoc.Stockmoves"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Stockserialmoves"
+    Association="project1.Cnt001370Assoc"
+    AssociationEnd="project1.Cnt001370Assoc.Stockserialmoves"
+    AssociationOtherEnd="project1.Cnt001370Assoc.Stockmoves"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="Systypes"
+    Association="project1.Cnt001363Assoc"
+    AssociationEnd="project1.Cnt001363Assoc.Systypes"
+    AssociationOtherEnd="project1.Cnt001363Assoc.Stockmoves"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="StockmovesPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="STOCKMOVES_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockmoves.Stkmoveno"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001362">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="STOCKMASTER_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001362"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockmoves.Stockid"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001363">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="SYSTYPES_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001363"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockmoves.Type"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001364">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOCATIONS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001364"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockmoves.Loccode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001365">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="PERIODS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001365"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Stockmoves.Prd"/>
+    </AttrArray>
+  </Key>
+</Entity>

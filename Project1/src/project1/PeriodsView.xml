@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PeriodsView"
+  Version="11.1.2.62.76"
+  SelectList="Periods.PERIODNO, 
+       Periods.LASTDATE_IN_PERIOD"
+  FromList="PERIODS Periods"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Periods"
+    Entity="project1.Periods"/>
+  <ViewAttribute
+    Name="Periodno"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Periodno"
+    EntityUsage="Periods"
+    AliasName="PERIODNO"/>
+  <ViewAttribute
+    Name="LastdateInPeriod"
+    PrecisionRule="true"
+    EntityAttrName="LastdateInPeriod"
+    EntityUsage="Periods"
+    AliasName="LASTDATE_IN_PERIOD"/>
+  <ViewLinkAccessor
+    Name="GltransView"
+    ViewLink="project1.Cnt001298Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="DebtortransView"
+    ViewLink="project1.Cnt001280Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="ChartdetailsView"
+    ViewLink="project1.Cnt001252Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="SalesanalysisView"
+    ViewLink="project1.Cnt001334Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="StockmovesView"
+    ViewLink="project1.Cnt001365Link"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+</ViewObject>

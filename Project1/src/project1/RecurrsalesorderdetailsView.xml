@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewObject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="RecurrsalesorderdetailsView"
+  Version="11.1.2.62.76"
+  SelectList="Recurrsalesorderdetails.RECURRORDERNO, 
+       Recurrsalesorderdetails.STKCODE, 
+       Recurrsalesorderdetails.UNITPRICE, 
+       Recurrsalesorderdetails.QUANTITY, 
+       Recurrsalesorderdetails.DISCOUNTPERCENT, 
+       Recurrsalesorderdetails.NARRATIVE"
+  FromList="RECURRSALESORDERDETAILS Recurrsalesorderdetails"
+  BindingStyle="OracleName"
+  CustomQuery="false"
+  PageIterMode="Full"
+  UseGlueCode="false">
+  <EntityUsage
+    Name="Recurrsalesorderdetails"
+    Entity="project1.Recurrsalesorderdetails"/>
+  <ViewAttribute
+    Name="Recurrorderno"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Recurrorderno"
+    EntityUsage="Recurrsalesorderdetails"
+    AliasName="RECURRORDERNO"/>
+  <ViewAttribute
+    Name="Stkcode"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Stkcode"
+    EntityUsage="Recurrsalesorderdetails"
+    AliasName="STKCODE"/>
+  <ViewAttribute
+    Name="Unitprice"
+    PrecisionRule="true"
+    EntityAttrName="Unitprice"
+    EntityUsage="Recurrsalesorderdetails"
+    AliasName="UNITPRICE"/>
+  <ViewAttribute
+    Name="Quantity"
+    PrecisionRule="true"
+    EntityAttrName="Quantity"
+    EntityUsage="Recurrsalesorderdetails"
+    AliasName="QUANTITY"/>
+  <ViewAttribute
+    Name="Discountpercent"
+    PrecisionRule="true"
+    EntityAttrName="Discountpercent"
+    EntityUsage="Recurrsalesorderdetails"
+    AliasName="DISCOUNTPERCENT"/>
+  <ViewAttribute
+    Name="Narrative"
+    PrecisionRule="true"
+    EntityAttrName="Narrative"
+    EntityUsage="Recurrsalesorderdetails"
+    AliasName="NARRATIVE"/>
+</ViewObject>

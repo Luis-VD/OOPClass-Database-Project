@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Reportcolumns"
+  Version="11.1.2.62.76"
+  DBObjectType="table"
+  DBObjectName="REPORTCOLUMNS"
+  AliasName="Reportcolumns"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <Attribute
+    Name="Reportid"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="REPORTID"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Colno"
+    IsNotNull="true"
+    Precision="8"
+    Scale="0"
+    ColumnName="COLNO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Heading1"
+    Precision="255"
+    ColumnName="HEADING1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="REPORTCOLUMNS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Heading2"
+    Precision="255"
+    ColumnName="HEADING2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="REPORTCOLUMNS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Calculation"
+    Precision="8"
+    Scale="0"
+    ColumnName="CALCULATION"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <Attribute
+    Name="Periodfrom"
+    Precision="8"
+    Scale="0"
+    ColumnName="PERIODFROM"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <Attribute
+    Name="Periodto"
+    Precision="8"
+    Scale="0"
+    ColumnName="PERIODTO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <Attribute
+    Name="Datatype"
+    Precision="255"
+    ColumnName="DATATYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="REPORTCOLUMNS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Colnumerator"
+    Precision="8"
+    Scale="0"
+    ColumnName="COLNUMERATOR"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <Attribute
+    Name="Coldenominator"
+    Precision="8"
+    Scale="0"
+    ColumnName="COLDENOMINATOR"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <Attribute
+    Name="Calcoperator"
+    Precision="255"
+    ColumnName="CALCOPERATOR"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="REPORTCOLUMNS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Budgetoractual"
+    Precision="8"
+    Scale="0"
+    ColumnName="BUDGETORACTUAL"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <Attribute
+    Name="Valformat"
+    Precision="255"
+    ColumnName="VALFORMAT"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="REPORTCOLUMNS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="255"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Constant"
+    Precision="10"
+    Scale="2"
+    ColumnName="CONSTANT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="REPORTCOLUMNS"/>
+  <AccessorAttribute
+    Name="Reportheaders"
+    Association="project1.Cnt001331Assoc"
+    AssociationEnd="project1.Cnt001331Assoc.Reportheaders"
+    AssociationOtherEnd="project1.Cnt001331Assoc.Reportcolumns"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="ReportcolumnsPkey"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="REPORTCOLUMNS_PKEY"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Reportcolumns.Reportid"/>
+      <Item Value="project1.Reportcolumns.Colno"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="Cnt001331">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="REPORTHEADERS_PKEY"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="CNT001331"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="project1.Reportcolumns.Reportid"/>
+    </AttrArray>
+  </Key>
+</Entity>
